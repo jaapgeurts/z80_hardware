@@ -1,0 +1,245 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 4
+Title "Z80 Computer / Sound & I/O"
+Date "2021-02-02"
+Rev "1"
+Comp "Jaap Geurts"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L oldchips:AY-3-8910 U?
+U 1 1 602032FC
+P 4750 2550
+F 0 "U?" H 4400 3750 50  0000 C CNN
+F 1 "AY-3-8910" H 5050 3750 50  0000 C CNN
+F 2 "oldchips-DIL40" H 4750 2700 50  0001 C CNN
+F 3 "" H 4750 2550 50  0001 C CNN
+	1    4750 2550
+	1    0    0    -1  
+$EndComp
+Wire Bus Line
+	3600 2850 3850 2850
+Entry Wire Line
+	3850 2900 3950 3000
+Entry Wire Line
+	3850 3000 3950 3100
+Entry Wire Line
+	3850 3100 3950 3200
+Entry Wire Line
+	3850 3200 3950 3300
+Entry Wire Line
+	3850 3300 3950 3400
+Entry Wire Line
+	3850 3400 3950 3500
+Entry Wire Line
+	3850 3500 3950 3600
+Entry Wire Line
+	3850 3600 3950 3700
+Wire Wire Line
+	3950 3000 4150 3000
+Wire Wire Line
+	3950 3100 4150 3100
+Wire Wire Line
+	3950 3200 4150 3200
+Wire Wire Line
+	3950 3300 4150 3300
+Wire Wire Line
+	3950 3400 4150 3400
+Wire Wire Line
+	3950 3500 4150 3500
+Wire Wire Line
+	3950 3600 4150 3600
+Wire Wire Line
+	3950 3700 4150 3700
+Text Label 4100 3000 2    50   ~ 0
+D0
+Text Label 4100 3100 2    50   ~ 0
+D1
+Text Label 4100 3200 2    50   ~ 0
+D2
+Text Label 4100 3300 2    50   ~ 0
+D3
+Text Label 4100 3400 2    50   ~ 0
+D4
+Text Label 4100 3500 2    50   ~ 0
+D5
+Text Label 4100 3600 2    50   ~ 0
+D6
+Text Label 4100 3700 2    50   ~ 0
+D7
+Text GLabel 3600 2850 0    50   Input ~ 0
+D[0..7]
+Text Notes 3700 2150 2    50   ~ 0
+Note: Clock input\nMax 2MHz
+Text GLabel 4000 2000 0    50   Input ~ 0
+~RESET
+Wire Wire Line
+	4000 2000 4150 2000
+NoConn ~ 4150 1500
+NoConn ~ 4150 1600
+NoConn ~ 4150 1700
+NoConn ~ 4150 1800
+$Comp
+L power:+5V #PWR?
+U 1 1 603827F7
+P 4750 1200
+F 0 "#PWR?" H 4750 1050 50  0001 C CNN
+F 1 "+5V" H 4765 1373 50  0000 C CNN
+F 2 "" H 4750 1200 50  0001 C CNN
+F 3 "" H 4750 1200 50  0001 C CNN
+	1    4750 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60382C99
+P 4750 4000
+F 0 "#PWR?" H 4750 3750 50  0001 C CNN
+F 1 "GND" H 4755 3827 50  0000 C CNN
+F 2 "" H 4750 4000 50  0001 C CNN
+F 3 "" H 4750 4000 50  0001 C CNN
+	1    4750 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5350 1500 5600 1500
+Wire Wire Line
+	5600 1500 5600 1600
+Wire Wire Line
+	5600 1600 5350 1600
+Wire Wire Line
+	5600 1600 5600 1700
+Wire Wire Line
+	5600 1700 5350 1700
+Connection ~ 5600 1600
+$Comp
+L Device:R R?
+U 1 1 60383CFB
+P 6200 1500
+F 0 "R?" V 5993 1500 50  0000 C CNN
+F 1 "R" V 6084 1500 50  0000 C CNN
+F 2 "" V 6130 1500 50  0001 C CNN
+F 3 "~" H 6200 1500 50  0001 C CNN
+	1    6200 1500
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 603845F0
+P 5850 1750
+F 0 "R?" H 5920 1796 50  0000 L CNN
+F 1 "R" H 5920 1705 50  0000 L CNN
+F 2 "" V 5780 1750 50  0001 C CNN
+F 3 "~" H 5850 1750 50  0001 C CNN
+	1    5850 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 6038551A
+P 6600 1750
+F 0 "R?" H 6670 1796 50  0000 L CNN
+F 1 "R" H 6670 1705 50  0000 L CNN
+F 2 "" V 6530 1750 50  0001 C CNN
+F 3 "~" H 6600 1750 50  0001 C CNN
+	1    6600 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 60385BB4
+P 6900 1750
+F 0 "C?" H 7015 1796 50  0000 L CNN
+F 1 "C" H 7015 1705 50  0000 L CNN
+F 2 "" H 6938 1600 50  0001 C CNN
+F 3 "~" H 6900 1750 50  0001 C CNN
+	1    6900 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 603862D4
+P 7300 1500
+F 0 "C?" V 7048 1500 50  0000 C CNN
+F 1 "C" V 7139 1500 50  0000 C CNN
+F 2 "" H 7338 1350 50  0001 C CNN
+F 3 "~" H 7300 1500 50  0001 C CNN
+	1    7300 1500
+	0    1    1    0   
+$EndComp
+$Comp
+L Amplifier_Operational:LM741 U?
+U 1 1 60387011
+P 7950 1600
+F 0 "U?" H 8294 1646 50  0000 L CNN
+F 1 "LM741" H 8294 1555 50  0000 L CNN
+F 2 "" H 8000 1650 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm741.pdf" H 8100 1750 50  0001 C CNN
+	1    7950 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7450 1500 7650 1500
+Wire Wire Line
+	5600 1500 5850 1500
+Wire Wire Line
+	6350 1500 6600 1500
+Wire Wire Line
+	5850 1500 5850 1600
+Connection ~ 5850 1500
+Wire Wire Line
+	5850 1500 6050 1500
+Wire Wire Line
+	6600 1600 6600 1500
+Connection ~ 6600 1500
+Wire Wire Line
+	6600 1500 6900 1500
+Wire Wire Line
+	6900 1600 6900 1500
+Connection ~ 6900 1500
+Wire Wire Line
+	6900 1500 7150 1500
+Wire Wire Line
+	5850 1900 5850 2000
+Wire Wire Line
+	5850 2000 6600 2000
+Wire Wire Line
+	6600 2000 6600 1900
+Wire Wire Line
+	6600 2000 6900 2000
+Wire Wire Line
+	6900 2000 6900 1900
+Connection ~ 6600 2000
+$Comp
+L power:GND #PWR?
+U 1 1 6038C4F6
+P 6600 2000
+F 0 "#PWR?" H 6600 1750 50  0001 C CNN
+F 1 "GND" H 6605 1827 50  0000 C CNN
+F 2 "" H 6600 2000 50  0001 C CNN
+F 3 "" H 6600 2000 50  0001 C CNN
+	1    6600 2000
+	1    0    0    -1  
+$EndComp
+Connection ~ 5600 1500
+$Comp
+L Graphic:Logo_Open_Hardware_Small #LOGO?
+U 1 1 6038FA77
+P 10850 6900
+F 0 "#LOGO?" H 10850 7175 50  0001 C CNN
+F 1 "Logo_Open_Hardware_Small" H 10850 6675 50  0001 C CNN
+F 2 "" H 10850 6900 50  0001 C CNN
+F 3 "~" H 10850 6900 50  0001 C CNN
+	1    10850 6900
+	1    0    0    -1  
+$EndComp
+Wire Bus Line
+	3850 2850 3850 3600
+$EndSCHEMATC
