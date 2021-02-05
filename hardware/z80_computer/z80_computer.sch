@@ -1097,17 +1097,6 @@ Wire Wire Line
 	6000 1100 6000 1500
 $Comp
 L 74xx:74HCT04 U1
-U 4 1 609D924A
-P 9750 4600
-F 0 "U1" H 9750 4917 50  0000 C CNN
-F 1 "74HCT04" H 9750 4826 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 9750 4600 50  0001 C CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 9750 4600 50  0001 C CNN
-	4    9750 4600
-	1    0    0    -1  
-$EndComp
-$Comp
-L 74xx:74HCT04 U1
 U 5 1 609DA1EC
 P 9750 5100
 F 0 "U1" H 9750 5417 50  0000 C CNN
@@ -1162,10 +1151,7 @@ F 3 "" H 8750 5800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9450 4600 9450 5100
-Wire Wire Line
 	9450 5100 9450 5650
-Connection ~ 9450 5100
 Wire Wire Line
 	8750 5800 8750 5750
 Wire Wire Line
@@ -1174,7 +1160,6 @@ Wire Wire Line
 	9450 5800 8750 5800
 Connection ~ 9450 5650
 Connection ~ 8750 5800
-NoConn ~ 10050 4600
 NoConn ~ 10050 5100
 NoConn ~ 10050 5650
 $Comp

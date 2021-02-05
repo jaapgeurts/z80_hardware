@@ -502,7 +502,7 @@ Wire Wire Line
 	5600 1500 5600 950 
 Wire Wire Line
 	5600 950  5900 950 
+Connection ~ 5600 1500
 Wire Bus Line
 	3850 2850 3850 3600
-Connection ~ 5600 1500
 $EndSCHEMATC
