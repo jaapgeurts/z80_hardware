@@ -375,10 +375,10 @@ Text GLabel 7200 4200 0    50   Output ~ 0
 Text GLabel 3150 4450 0    50   Output ~ 0
 ~INT
 $Comp
-L Connector:Mini-DIN-6 J?
+L Connector:Mini-DIN-6 J5
 U 1 1 60ABB0AF
 P 10350 3900
-F 0 "J?" H 10350 4267 50  0000 C CNN
+F 0 "J5" H 10350 4267 50  0000 C CNN
 F 1 "Mini-DIN-6" H 10350 4176 50  0000 C CNN
 F 2 "" H 10350 3900 50  0001 C CNN
 F 3 "http://service.powerdynamics.com/ec/Catalog17/Section%2011.pdf" H 10350 3900 50  0001 C CNN
@@ -386,10 +386,10 @@ F 3 "http://service.powerdynamics.com/ec/Catalog17/Section%2011.pdf" H 10350 390
 	-1   0    0    1   
 $EndComp
 $Comp
-L power:+5V #PWR?
+L power:+5V #PWR047
 U 1 1 60ABECC1
 P 9200 3500
-F 0 "#PWR?" H 9200 3350 50  0001 C CNN
+F 0 "#PWR047" H 9200 3350 50  0001 C CNN
 F 1 "+5V" H 9215 3673 50  0000 C CNN
 F 2 "" H 9200 3500 50  0001 C CNN
 F 3 "" H 9200 3500 50  0001 C CNN
@@ -397,10 +397,10 @@ F 3 "" H 9200 3500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR048
 U 1 1 60ABF3A2
 P 9950 4550
-F 0 "#PWR?" H 9950 4300 50  0001 C CNN
+F 0 "#PWR048" H 9950 4300 50  0001 C CNN
 F 1 "GND" H 9955 4377 50  0000 C CNN
 F 2 "" H 9950 4550 50  0001 C CNN
 F 3 "" H 9950 4550 50  0001 C CNN
@@ -410,10 +410,10 @@ $EndComp
 Wire Wire Line
 	9950 3900 9950 4550
 $Comp
-L Device:R R?
+L Device:R R1
 U 1 1 601DB30B
 P 9200 3750
-F 0 "R?" H 9270 3796 50  0000 L CNN
+F 0 "R1" H 9270 3796 50  0000 L CNN
 F 1 "10k" H 9270 3705 50  0000 L CNN
 F 2 "" V 9130 3750 50  0001 C CNN
 F 3 "~" H 9200 3750 50  0001 C CNN
@@ -421,10 +421,10 @@ F 3 "~" H 9200 3750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R?
+L Device:R R17
 U 1 1 601DB618
 P 9550 3850
-F 0 "R?" H 9620 3896 50  0000 L CNN
+F 0 "R17" H 9620 3896 50  0000 L CNN
 F 1 "10k" H 9620 3805 50  0000 L CNN
 F 2 "" V 9480 3850 50  0001 C CNN
 F 3 "~" H 9550 3850 50  0001 C CNN
@@ -458,10 +458,10 @@ NoConn ~ 10650 4000
 Wire Wire Line
 	9200 3600 9550 3600
 $Comp
-L 74xx:74HCT04 U?
+L 74xx:74HCT04 U1
 U 4 1 60223F9D
 P 9050 4400
-F 0 "U?" H 9050 4083 50  0000 C CNN
+F 0 "U1" H 9050 4083 50  0000 C CNN
 F 1 "74HCT04" H 9050 4174 50  0000 C CNN
 F 2 "" H 9050 4400 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 9050 4400 50  0001 C CNN
@@ -486,6 +486,10 @@ Wire Wire Line
 	8750 4400 8750 4000
 Wire Wire Line
 	8400 4000 8750 4000
+Text GLabel 4600 2900 2    50   Input ~ 0
+CLK-2
+Wire Wire Line
+	4350 2900 4600 2900
 Wire Bus Line
 	2500 3800 2500 5350
 Wire Bus Line

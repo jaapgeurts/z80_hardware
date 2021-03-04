@@ -235,7 +235,6 @@ Wire Wire Line
 	7750 5100 7750 4950
 Text Label 5250 3000 2    50   ~ 0
 RxTxCLK
-NoConn ~ 4350 2900
 NoConn ~ 4350 3250
 NoConn ~ 4350 3350
 NoConn ~ 4350 3550
@@ -486,6 +485,10 @@ Wire Wire Line
 	8750 4400 8750 4000
 Wire Wire Line
 	8400 4000 8750 4000
+Text GLabel 4600 2900 2    50   Input ~ 0
+CLK-2
+Wire Wire Line
+	4350 2900 4600 2900
 Wire Bus Line
 	2500 3800 2500 5350
 Wire Bus Line

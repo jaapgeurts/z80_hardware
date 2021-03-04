@@ -515,10 +515,10 @@ Wire Notes Line
 Wire Wire Line
 	7450 4000 7850 4000
 $Comp
-L Graphic:Logo_Open_Hardware_Small #LOGO?
+L Graphic:Logo_Open_Hardware_Small #LOGO5
 U 1 1 60AB7C21
 P 10900 6900
-F 0 "#LOGO?" H 10900 7175 50  0001 C CNN
+F 0 "#LOGO5" H 10900 7175 50  0001 C CNN
 F 1 "Logo_Open_Hardware_Small" H 10900 6675 50  0001 C CNN
 F 2 "" H 10900 6900 50  0001 C CNN
 F 3 "~" H 10900 6900 50  0001 C CNN
