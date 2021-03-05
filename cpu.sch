@@ -475,7 +475,6 @@ Wire Wire Line
 	8950 3900 8850 3900
 Wire Wire Line
 	8850 4000 8950 4000
-NoConn ~ 8850 4100
 Wire Wire Line
 	7850 4100 7700 4100
 Text Label 7700 4100 2    50   ~ 0
@@ -525,6 +524,10 @@ F 3 "~" H 10900 6900 50  0001 C CNN
 	1    10900 6900
 	1    0    0    -1  
 $EndComp
+Text GLabel 9200 4100 2    50   Output ~ 0
+~RTCS
+Wire Wire Line
+	9200 4100 8850 4100
 Wire Bus Line
 	4650 3200 4650 3950
 Wire Bus Line
