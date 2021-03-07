@@ -283,7 +283,6 @@ NoConn ~ 8050 3350
 NoConn ~ 8050 3450
 NoConn ~ 8050 3550
 NoConn ~ 8050 3650
-NoConn ~ 2950 3250
 $Comp
 L power:+5V #PWR027
 U 1 1 60314450
@@ -306,7 +305,7 @@ Wire Bus Line
 Wire Bus Line
 	2650 1050 2000 1050
 Connection ~ 2650 1050
-Text GLabel 1900 4250 0    50   Input ~ 0
+Text GLabel 1950 3250 0    50   Input ~ 0
 A[0..1]
 Wire Wire Line
 	6700 3500 6950 3500
@@ -336,7 +335,7 @@ Wire Wire Line
 Wire Wire Line
 	2950 3350 2800 3350
 Wire Bus Line
-	1900 4250 2150 4250
+	1950 3250 2150 3250
 Entry Wire Line
 	6600 3600 6700 3500
 Entry Wire Line
@@ -344,23 +343,12 @@ Entry Wire Line
 Wire Wire Line
 	6950 3300 5150 3300
 Wire Wire Line
-	5150 3300 5150 3900
-Wire Wire Line
-	5150 3900 2350 3900
-Wire Wire Line
-	2350 3900 2350 3150
-Wire Wire Line
-	2350 3150 2950 3150
-Wire Wire Line
 	8750 1800 8750 1200
 Wire Wire Line
 	8750 1200 5700 1200
 Wire Wire Line
 	5700 1200 5700 1900
 Connection ~ 8750 1800
-Connection ~ 2150 4250
-Wire Bus Line
-	2150 4250 6600 4250
 Entry Wire Line
 	2150 2700 2250 2600
 Entry Wire Line
@@ -489,12 +477,161 @@ Text GLabel 4250 1800 2    50   Input ~ 0
 CLK-2
 Wire Wire Line
 	4000 1800 4250 1800
+$Comp
+L personal:Z84C200-PIO U?
+U 1 1 6045EEDD
+P 4450 6300
+F 0 "U?" H 4100 7450 50  0000 C CNN
+F 1 "Z84C200-PIO" H 4800 7450 50  0000 C CNN
+F 2 "Package_DIP:DIP-40_W15.24mm" H 4450 6350 50  0001 C CNN
+F 3 "" H 4425 6375 50  0001 C CNN
+	1    4450 6300
+	1    0    0    -1  
+$EndComp
+Entry Wire Line
+	3600 5200 3700 5300
+Entry Wire Line
+	3600 5300 3700 5400
+Entry Wire Line
+	3600 5400 3700 5500
+Entry Wire Line
+	3600 5500 3700 5600
+Entry Wire Line
+	3600 5600 3700 5700
+Entry Wire Line
+	3600 5700 3700 5800
+Entry Wire Line
+	3600 5800 3700 5900
+Entry Wire Line
+	3600 5900 3700 6000
+Wire Wire Line
+	3700 5300 3900 5300
+Wire Wire Line
+	3700 5400 3900 5400
+Wire Wire Line
+	3700 5500 3900 5500
+Wire Wire Line
+	3700 5600 3900 5600
+Wire Wire Line
+	3700 5700 3900 5700
+Wire Wire Line
+	3700 5800 3900 5800
+Wire Wire Line
+	3700 5900 3900 5900
+Wire Wire Line
+	3700 6000 3900 6000
+Text Label 3750 5300 0    50   ~ 0
+D0
+Text Label 3750 5400 0    50   ~ 0
+D1
+Text Label 3750 5500 0    50   ~ 0
+D2
+Text Label 3750 5600 0    50   ~ 0
+D3
+Text Label 3750 5700 0    50   ~ 0
+D4
+Text Label 3750 5800 0    50   ~ 0
+D5
+Text Label 3750 5900 0    50   ~ 0
+D6
+Text Label 3750 6000 0    50   ~ 0
+D7
+Text GLabel 2950 4700 0    50   Input ~ 0
+D[0..7]
 Wire Bus Line
-	2150 2700 2150 4250
+	3600 4700 2950 4700
+Text GLabel 3400 7300 0    50   Input ~ 0
+A[0..1]
+Wire Bus Line
+	3400 7300 3650 7300
+Entry Wire Line
+	3650 7100 3750 7000
+Entry Wire Line
+	3650 7200 3750 7100
+Wire Wire Line
+	3750 7000 3900 7000
+Wire Wire Line
+	3750 7100 3900 7100
+Text Label 3800 7100 0    50   ~ 0
+A1
+Text Label 3800 7000 0    50   ~ 0
+A0
+$Comp
+L power:GND #PWR?
+U 1 1 6047487E
+P 4500 7450
+F 0 "#PWR?" H 4500 7200 50  0001 C CNN
+F 1 "GND" H 4505 7277 50  0000 C CNN
+F 2 "" H 4500 7450 50  0001 C CNN
+F 3 "" H 4500 7450 50  0001 C CNN
+	1    4500 7450
+	1    0    0    -1  
+$EndComp
+Text GLabel 3950 7600 0    50   Input ~ 0
+CLK
+Wire Wire Line
+	3950 7600 4350 7600
+Wire Wire Line
+	4350 7600 4350 7450
+$Comp
+L power:+5V #PWR?
+U 1 1 60477A07
+P 4450 5100
+F 0 "#PWR?" H 4450 4950 50  0001 C CNN
+F 1 "+5V" H 4465 5273 50  0000 C CNN
+F 2 "" H 4450 5100 50  0001 C CNN
+F 3 "" H 4450 5100 50  0001 C CNN
+	1    4450 5100
+	1    0    0    -1  
+$EndComp
+Text GLabel 3750 6150 0    50   Input ~ 0
+~PIOS
+Wire Wire Line
+	3750 6150 3900 6150
+Text GLabel 3450 6250 0    50   Input ~ 0
+~M1
+Text GLabel 3750 6350 0    50   Input ~ 0
+~IORQ
+Text GLabel 3450 6450 0    50   Input ~ 0
+~RD
+Wire Wire Line
+	3450 6250 3900 6250
+Wire Wire Line
+	3450 6450 3900 6450
+Wire Wire Line
+	3750 6350 3900 6350
+Text GLabel 3750 6600 0    50   Output ~ 0
+~INT
+Wire Wire Line
+	3750 6600 3900 6600
+Wire Wire Line
+	3900 6700 3150 6700
+Wire Wire Line
+	5150 4550 3150 4550
+Wire Wire Line
+	3150 4550 3150 6700
+Wire Wire Line
+	5150 3300 5150 4550
+Wire Wire Line
+	3900 6800 2350 6800
+Wire Wire Line
+	2350 6800 2350 3150
+Wire Wire Line
+	2350 3150 2950 3150
+Text GLabel 6250 4250 0    50   Input ~ 0
+A[0..1]
+Wire Bus Line
+	6250 4250 6600 4250
+Wire Bus Line
+	3650 7100 3650 7300
+Wire Bus Line
+	2150 2700 2150 3250
 Wire Bus Line
 	6600 3600 6600 4250
 Wire Bus Line
 	6650 1050 6650 2300
 Wire Bus Line
 	2650 1050 2650 2250
+Wire Bus Line
+	3600 4700 3600 5900
 $EndSCHEMATC
