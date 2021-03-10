@@ -268,23 +268,21 @@ $EndComp
 $Comp
 L Device:R R?
 U 1 1 608E47E0
-P 2000 2200
+P 2000 2100
 AR Path="/608E47E0" Ref="R?"  Part="1" 
 AR Path="/608D2E51/608E47E0" Ref="R15"  Part="1" 
-F 0 "R15" H 2070 2246 50  0000 L CNN
-F 1 "10k" H 2070 2155 50  0000 L CNN
-F 2 "" V 1930 2200 50  0001 C CNN
-F 3 "~" H 2000 2200 50  0001 C CNN
-	1    2000 2200
+F 0 "R15" H 2070 2146 50  0000 L CNN
+F 1 "10k" H 2070 2055 50  0000 L CNN
+F 2 "" V 1930 2100 50  0001 C CNN
+F 3 "~" H 2000 2100 50  0001 C CNN
+	1    2000 2100
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2850 2350 2000 2350
 Wire Wire Line
 	2850 2250 2300 2250
 Connection ~ 2000 2850
 Wire Wire Line
-	2000 2050 2000 1800
+	2000 1950 2000 1800
 Wire Wire Line
 	2300 1950 2300 1800
 Wire Wire Line
@@ -303,9 +301,6 @@ F 3 "" H 2000 1800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 2000 1800
-Wire Wire Line
-	2000 2350 1750 2350
-Connection ~ 2000 2350
 Wire Wire Line
 	2300 2250 2300 2500
 Wire Wire Line
@@ -531,8 +526,15 @@ Text GLabel 8950 4200 2    50   Output ~ 0
 ~PIOS
 Wire Wire Line
 	8850 4200 8950 4200
+Wire Wire Line
+	1750 2350 2000 2350
+Wire Wire Line
+	2000 2250 2000 2350
 Wire Bus Line
 	4650 3200 4650 3950
 Wire Bus Line
 	4550 1400 4550 2950
+Connection ~ 2000 2350
+Wire Wire Line
+	2000 2350 2850 2350
 $EndSCHEMATC
