@@ -530,11 +530,11 @@ Wire Wire Line
 	1750 2350 2000 2350
 Wire Wire Line
 	2000 2250 2000 2350
+Connection ~ 2000 2350
+Wire Wire Line
+	2000 2350 2850 2350
 Wire Bus Line
 	4650 3200 4650 3950
 Wire Bus Line
 	4550 1400 4550 2950
-Connection ~ 2000 2350
-Wire Wire Line
-	2000 2350 2850 2350
 $EndSCHEMATC

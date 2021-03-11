@@ -152,78 +152,78 @@ BDIR
 NoConn ~ 2250 2200
 NoConn ~ 2250 2300
 Wire Wire Line
-	5450 3200 5600 3200
+	5500 3600 5650 3600
 $Comp
 L Device:R R13
 U 1 1 60384AA5
-P 5300 3200
-F 0 "R13" V 5507 3200 50  0000 C CNN
-F 1 "10k" V 5416 3200 50  0000 C CNN
-F 2 "" V 5230 3200 50  0001 C CNN
-F 3 "~" H 5300 3200 50  0001 C CNN
-	1    5300 3200
+P 5350 3600
+F 0 "R13" V 5557 3600 50  0000 C CNN
+F 1 "10k" V 5466 3600 50  0000 C CNN
+F 2 "" V 5280 3600 50  0001 C CNN
+F 3 "~" H 5350 3600 50  0001 C CNN
+	1    5350 3600
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	5900 2800 5900 3000
-Connection ~ 5900 3400
+	5950 3200 5950 3400
+Connection ~ 5950 3800
 $Comp
 L dk_Transistors-Bipolar-BJT-Single:2N3904 Q1
 U 1 1 6037F535
-P 5800 3200
-F 0 "Q1" H 5988 3253 60  0000 L CNN
-F 1 "2N3904" H 5988 3147 60  0000 L CNN
-F 2 "digikey-footprints:TO-92-3" H 6000 3400 60  0001 L CNN
-F 3 "https://my.centralsemi.com/get_document.php?cmp=1&mergetype=pd&mergepath=pd&pdf_id=LSSGP072.PDF" H 6000 3500 60  0001 L CNN
-F 4 "2N3904CS-ND" H 6000 3600 60  0001 L CNN "Digi-Key_PN"
-F 5 "2N3904" H 6000 3700 60  0001 L CNN "MPN"
-F 6 "Discrete Semiconductor Products" H 6000 3800 60  0001 L CNN "Category"
-F 7 "Transistors - Bipolar (BJT) - Single" H 6000 3900 60  0001 L CNN "Family"
-F 8 "https://my.centralsemi.com/get_document.php?cmp=1&mergetype=pd&mergepath=pd&pdf_id=LSSGP072.PDF" H 6000 4000 60  0001 L CNN "DK_Datasheet_Link"
-F 9 "/product-detail/en/central-semiconductor-corp/2N3904/2N3904CS-ND/4806876" H 6000 4100 60  0001 L CNN "DK_Detail_Page"
-F 10 "TRANS NPN 40V TO-92" H 6000 4200 60  0001 L CNN "Description"
-F 11 "Central Semiconductor Corp" H 6000 4300 60  0001 L CNN "Manufacturer"
-F 12 "Active" H 6000 4400 60  0001 L CNN "Status"
-	1    5800 3200
+P 5850 3600
+F 0 "Q1" H 6038 3653 60  0000 L CNN
+F 1 "2N3904" H 6038 3547 60  0000 L CNN
+F 2 "digikey-footprints:TO-92-3" H 6050 3800 60  0001 L CNN
+F 3 "https://my.centralsemi.com/get_document.php?cmp=1&mergetype=pd&mergepath=pd&pdf_id=LSSGP072.PDF" H 6050 3900 60  0001 L CNN
+F 4 "2N3904CS-ND" H 6050 4000 60  0001 L CNN "Digi-Key_PN"
+F 5 "2N3904" H 6050 4100 60  0001 L CNN "MPN"
+F 6 "Discrete Semiconductor Products" H 6050 4200 60  0001 L CNN "Category"
+F 7 "Transistors - Bipolar (BJT) - Single" H 6050 4300 60  0001 L CNN "Family"
+F 8 "https://my.centralsemi.com/get_document.php?cmp=1&mergetype=pd&mergepath=pd&pdf_id=LSSGP072.PDF" H 6050 4400 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/central-semiconductor-corp/2N3904/2N3904CS-ND/4806876" H 6050 4500 60  0001 L CNN "DK_Detail_Page"
+F 10 "TRANS NPN 40V TO-92" H 6050 4600 60  0001 L CNN "Description"
+F 11 "Central Semiconductor Corp" H 6050 4700 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 6050 4800 60  0001 L CNN "Status"
+	1    5850 3600
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5900 3400 5900 3450
+	5950 3800 5950 3850
 $Comp
 L Device:R R14
 U 1 1 6037E019
-P 5900 3600
-F 0 "R14" H 5830 3554 50  0000 R CNN
-F 1 "4k7" H 5830 3645 50  0000 R CNN
-F 2 "" V 5830 3600 50  0001 C CNN
-F 3 "~" H 5900 3600 50  0001 C CNN
-	1    5900 3600
+P 5950 4000
+F 0 "R14" H 5880 3954 50  0000 R CNN
+F 1 "4k7" H 5880 4045 50  0000 R CNN
+F 2 "" V 5880 4000 50  0001 C CNN
+F 3 "~" H 5950 4000 50  0001 C CNN
+	1    5950 4000
 	-1   0    0    1   
 $EndComp
 $Comp
 L power:GND #PWR036
 U 1 1 60378040
-P 5900 3750
-F 0 "#PWR036" H 5900 3500 50  0001 C CNN
-F 1 "GND" H 5905 3577 50  0000 C CNN
-F 2 "" H 5900 3750 50  0001 C CNN
-F 3 "" H 5900 3750 50  0001 C CNN
-	1    5900 3750
+P 5950 4150
+F 0 "#PWR036" H 5950 3900 50  0001 C CNN
+F 1 "GND" H 5955 3977 50  0000 C CNN
+F 2 "" H 5950 4150 50  0001 C CNN
+F 3 "" H 5950 4150 50  0001 C CNN
+	1    5950 4150
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5900 3400 6250 3400
-Text GLabel 6250 3400 2    50   Output ~ 0
+	5950 3800 6300 3800
+Text GLabel 6300 3800 2    50   Output ~ 0
 ~PWR
 $Comp
 L power:+5V #PWR035
 U 1 1 60378C7E
-P 5900 2800
-F 0 "#PWR035" H 5900 2650 50  0001 C CNN
-F 1 "+5V" H 5915 2973 50  0000 C CNN
-F 2 "" H 5900 2800 50  0001 C CNN
-F 3 "" H 5900 2800 50  0001 C CNN
-	1    5900 2800
+P 5950 3200
+F 0 "#PWR035" H 5950 3050 50  0001 C CNN
+F 1 "+5V" H 5965 3373 50  0000 C CNN
+F 2 "" H 5950 3200 50  0001 C CNN
+F 3 "" H 5950 3200 50  0001 C CNN
+	1    5950 3200
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -684,15 +684,11 @@ Wire Notes Line
 Text Notes 1050 4900 0    50   ~ 0
 Real Time Clock
 Wire Wire Line
-	5150 2750 5150 3200
-Wire Wire Line
 	3700 1500 3700 1250
 Connection ~ 3700 1500
 Connection ~ 7500 1250
 Wire Wire Line
 	3700 1250 5700 1250
-Wire Notes Line
-	5350 2400 5350 650 
 Text Notes 5400 800  0    50   ~ 0
 Audio Amplifier
 Wire Notes Line
@@ -898,12 +894,24 @@ Wire Wire Line
 	8050 1500 8050 1050
 Wire Wire Line
 	8050 1800 8050 2050
+Wire Wire Line
+	8050 2050 8500 2050
+Wire Notes Line
+	5350 650  11100 650 
+Wire Notes Line
+	11100 2650 5350 2650
+Wire Notes Line
+	5350 650  5350 2650
+Wire Notes Line
+	11100 650  11100 2650
+Wire Wire Line
+	5150 3600 5200 3600
+Wire Wire Line
+	5150 2750 5150 3600
 Wire Bus Line
 	2450 5850 2450 6250
 Wire Bus Line
 	3900 5750 3900 6250
 Wire Bus Line
 	1950 2850 1950 3600
-Wire Wire Line
-	8050 2050 8500 2050
 $EndSCHEMATC

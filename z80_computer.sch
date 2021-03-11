@@ -1095,7 +1095,7 @@ $Comp
 L 74xx:74HCT04 U1
 U 5 1 609DA1EC
 P 9750 5100
-F 0 "U1" H 9750 5417 50  0000 C CNN
+F 0 "U1" H 9750 5400 50  0000 C CNN
 F 1 "74HCT04" H 9750 5326 50  0000 C CNN
 F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 9750 5100 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 9750 5100 50  0001 C CNN
@@ -1240,4 +1240,19 @@ Wire Notes Line
 	7350 1000 7350 4150
 Wire Notes Line
 	9800 1000 9800 4150
+Wire Wire Line
+	9450 4600 9450 5100
+Connection ~ 9450 5100
+$Comp
+L 74xx:74HCT04 U?
+U 4 1 604F5119
+P 9750 4600
+F 0 "U?" H 9750 4300 50  0000 C CNN
+F 1 "74HCT04" H 9750 4400 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 9750 4600 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 9750 4600 50  0001 C CNN
+	4    9750 4600
+	1    0    0    1   
+$EndComp
+NoConn ~ 10050 4600
 $EndSCHEMATC
