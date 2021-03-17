@@ -19,7 +19,7 @@ U 1 1 601F217D
 P 5700 2700
 F 0 "U12" H 5300 3850 50  0000 C CNN
 F 1 "Z84C40-SIO-0" H 6050 3850 50  0000 C CNN
-F 2 "Package_DIP:DIP-40_W15.24mm" H 5675 2775 50  0001 C CNN
+F 2 "Package_DIP:DIP-40_W15.24mm_Socket_LongPads" H 5675 2775 50  0001 C CNN
 F 3 "" H 5675 2775 50  0001 C CNN
 	1    5700 2700
 	1    0    0    -1  
@@ -30,7 +30,7 @@ U 1 1 601FE04E
 P 2600 2600
 F 0 "U11" H 2250 3700 50  0000 C CNN
 F 1 "Z84C30-CTC" H 2900 3700 50  0000 C CNN
-F 2 "Package_DIP:DIP-28_W15.24mm" H 2600 2600 50  0001 C CNN
+F 2 "Package_DIP:DIP-28_W15.24mm_Socket_LongPads" H 2600 2600 50  0001 C CNN
 F 3 "" H 2600 2600 50  0001 C CNN
 	1    2600 2600
 	1    0    0    -1  
@@ -287,12 +287,12 @@ Wire Wire Line
 $Comp
 L Graphic:Logo_Open_Hardware_Small #LOGO3
 U 1 1 60392B48
-P 9950 6900
-F 0 "#LOGO3" H 9950 7175 50  0001 C CNN
-F 1 "Logo_Open_Hardware_Small" H 9950 6675 50  0001 C CNN
-F 2 "" H 9950 6900 50  0001 C CNN
-F 3 "~" H 9950 6900 50  0001 C CNN
-	1    9950 6900
+P 7250 6800
+F 0 "#LOGO3" H 7250 7075 50  0001 C CNN
+F 1 "Logo_Open_Hardware_Small" H 7250 6575 50  0001 C CNN
+F 2 "" H 7250 6800 50  0001 C CNN
+F 3 "~" H 7250 6800 50  0001 C CNN
+	1    7250 6800
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -354,7 +354,7 @@ U 1 1 601DB30B
 P 9550 2650
 F 0 "R1" H 9620 2696 50  0000 L CNN
 F 1 "10k" H 9620 2605 50  0000 L CNN
-F 2 "" V 9480 2650 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 9480 2650 50  0001 C CNN
 F 3 "~" H 9550 2650 50  0001 C CNN
 	1    9550 2650
 	1    0    0    -1  
@@ -365,7 +365,7 @@ U 1 1 601DB618
 P 9800 2750
 F 0 "R17" H 9870 2796 50  0000 L CNN
 F 1 "10k" H 9870 2705 50  0000 L CNN
-F 2 "" V 9730 2750 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 9730 2750 50  0001 C CNN
 F 3 "~" H 9800 2750 50  0001 C CNN
 	1    9800 2750
 	1    0    0    -1  
@@ -526,10 +526,10 @@ A[0..1]
 Wire Bus Line
 	4450 4250 4800 4250
 $Comp
-L dk_Transistors-Bipolar-BJT-Single:2N3904 Q?
+L dk_Transistors-Bipolar-BJT-Single:2N3904 Q1
 U 1 1 604A1EF9
 P 8350 3900
-F 0 "Q?" H 8538 3953 60  0000 L CNN
+F 0 "Q1" H 8538 3953 60  0000 L CNN
 F 1 "2N3904" H 8538 3847 60  0000 L CNN
 F 2 "digikey-footprints:TO-92-3" H 8550 4100 60  0001 L CNN
 F 3 "https://my.centralsemi.com/get_document.php?cmp=1&mergetype=pd&mergepath=pd&pdf_id=LSSGP072.PDF" H 8550 4200 60  0001 L CNN
@@ -573,46 +573,46 @@ Wire Wire Line
 Wire Wire Line
 	6750 2800 6250 2800
 $Comp
-L 74xx:74LS04 U?
+L 74xx:74LS04 U18
 U 1 1 60522C7D
 P 7650 2800
-F 0 "U?" H 7650 2483 50  0000 C CNN
+F 0 "U18" H 7650 2483 50  0000 C CNN
 F 1 "74LS04" H 7650 2574 50  0000 C CNN
-F 2 "" H 7650 2800 50  0001 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket_LongPads" H 7650 2800 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74LS04" H 7650 2800 50  0001 C CNN
 	1    7650 2800
 	-1   0    0    1   
 $EndComp
 $Comp
-L 74xx:74LS04 U?
+L 74xx:74LS04 U18
 U 2 1 60577A54
 P 7050 2800
-F 0 "U?" H 7050 2483 50  0000 C CNN
+F 0 "U18" H 7050 2483 50  0000 C CNN
 F 1 "74LS04" H 7050 2574 50  0000 C CNN
-F 2 "" H 7050 2800 50  0001 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket_LongPads" H 7050 2800 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74LS04" H 7050 2800 50  0001 C CNN
 	2    7050 2800
 	-1   0    0    1   
 $EndComp
 $Comp
-L 74xx:74LS04 U?
+L 74xx:74LS04 U18
 U 3 1 60520DDF
 P 7950 3100
-F 0 "U?" H 7950 2783 50  0000 C CNN
+F 0 "U18" H 7950 2783 50  0000 C CNN
 F 1 "74LS04" H 7950 2874 50  0000 C CNN
-F 2 "" H 7950 3100 50  0001 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket_LongPads" H 7950 3100 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74LS04" H 7950 3100 50  0001 C CNN
 	3    7950 3100
 	-1   0    0    1   
 $EndComp
 $Comp
-L personal:Z84C200-PIO U?
+L personal:Z84C200-PIO U14
 U 1 1 6045EEDD
 P 3000 6250
-F 0 "U?" H 2650 7400 50  0000 C CNN
-F 1 "74LS04" H 3350 7400 50  0000 C CNN
-F 2 "" H 3000 6300 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS04" H 2975 6325 50  0001 C CNN
+F 0 "U14" H 2650 7400 50  0000 C CNN
+F 1 "Z84C200-PIO" H 3350 7400 50  0000 C CNN
+F 2 "Package_DIP:DIP-40_W15.24mm_Socket_LongPads" H 3000 6300 50  0001 C CNN
+F 3 "" H 2975 6325 50  0001 C CNN
 	1    3000 6250
 	1    0    0    -1  
 $EndComp
@@ -620,33 +620,33 @@ Connection ~ 8450 3100
 Wire Wire Line
 	8450 3100 8800 3100
 $Comp
-L 74xx:74LS04 U?
+L 74xx:74LS04 U18
 U 6 1 606774FF
 P 10300 1950
-F 0 "U?" H 10300 2267 50  0000 C CNN
+F 0 "U18" H 10300 2267 50  0000 C CNN
 F 1 "74LS04" H 10300 2176 50  0000 C CNN
-F 2 "" H 10300 1950 50  0001 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket_LongPads" H 10300 1950 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74LS04" H 10300 1950 50  0001 C CNN
 	6    10300 1950
 	1    0    0    -1  
 $EndComp
 $Comp
-L 74xx:74LS04 U?
+L 74xx:74LS04 U18
 U 7 1 60677F4F
 P 9400 1700
-F 0 "U?" H 9630 1746 50  0000 L CNN
+F 0 "U18" H 9630 1746 50  0000 L CNN
 F 1 "74LS04" H 9630 1655 50  0000 L CNN
-F 2 "" H 9400 1700 50  0001 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket_LongPads" H 9400 1700 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74LS04" H 9400 1700 50  0001 C CNN
 	7    9400 1700
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9400 2200 9400 2300
+	9400 2200 9400 2250
 Wire Wire Line
-	9400 2300 9850 2300
+	9400 2250 9850 2250
 Wire Wire Line
-	9850 2300 9850 1950
+	9850 2250 9850 1950
 Wire Wire Line
 	9850 1950 10000 1950
 $Comp
@@ -661,12 +661,12 @@ F 3 "" H 8750 1100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R?
+L Device:R R14
 U 1 1 604E0FDB
 P 7750 3900
-F 0 "R?" V 7543 3900 50  0000 C CNN
+F 0 "R14" V 7543 3900 50  0000 C CNN
 F 1 "4k7" V 7634 3900 50  0000 C CNN
-F 2 "" V 7680 3900 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 7680 3900 50  0001 C CNN
 F 3 "~" H 7750 3900 50  0001 C CNN
 	1    7750 3900
 	0    1    1    0   
@@ -688,10 +688,10 @@ Connection ~ 9050 2800
 Wire Wire Line
 	9050 3100 9050 2800
 $Comp
-L dk_Transistors-Bipolar-BJT-Single:2N3904 Q?
+L dk_Transistors-Bipolar-BJT-Single:2N3904 Q2
 U 1 1 606176A0
 P 8950 3300
-F 0 "Q?" H 9138 3353 60  0000 L CNN
+F 0 "Q2" H 9138 3353 60  0000 L CNN
 F 1 "2N3904" H 9138 3247 60  0000 L CNN
 F 2 "digikey-footprints:TO-92-3" H 9150 3500 60  0001 L CNN
 F 3 "https://my.centralsemi.com/get_document.php?cmp=1&mergetype=pd&mergepath=pd&pdf_id=LSSGP072.PDF" H 9150 3600 60  0001 L CNN
@@ -710,12 +710,12 @@ $EndComp
 Wire Wire Line
 	7850 3300 8750 3300
 $Comp
-L Device:R R?
+L Device:R R13
 U 1 1 606703A5
 P 7700 3300
-F 0 "R?" V 7493 3300 50  0000 C CNN
+F 0 "R13" V 7493 3300 50  0000 C CNN
 F 1 "4k7" V 7584 3300 50  0000 C CNN
-F 2 "" V 7630 3300 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 7630 3300 50  0001 C CNN
 F 3 "~" H 7700 3300 50  0001 C CNN
 	1    7700 3300
 	0    1    1    0   
@@ -729,23 +729,23 @@ Wire Wire Line
 Wire Wire Line
 	6650 3300 6600 3300
 $Comp
-L 74xx:74LS04 U?
+L 74xx:74LS04 U18
 U 4 1 6059D323
 P 6950 3300
-F 0 "U?" H 6950 3617 50  0000 C CNN
+F 0 "U18" H 6950 3617 50  0000 C CNN
 F 1 "74LS04" H 6950 3526 50  0000 C CNN
-F 2 "" H 6950 3300 50  0001 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket_LongPads" H 6950 3300 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74LS04" H 6950 3300 50  0001 C CNN
 	4    6950 3300
 	1    0    0    -1  
 $EndComp
 $Comp
-L 74xx:74LS04 U?
+L 74xx:74LS04 U18
 U 5 1 604C5BFD
 P 7350 3100
-F 0 "U?" H 7350 2783 50  0000 C CNN
+F 0 "U18" H 7350 2783 50  0000 C CNN
 F 1 "74LS04" H 7350 2874 50  0000 C CNN
-F 2 "" H 7350 3100 50  0001 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket_LongPads" H 7350 3100 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74LS04" H 7350 3100 50  0001 C CNN
 	5    7350 3100
 	-1   0    0    1   
@@ -775,12 +775,12 @@ Wire Wire Line
 Wire Wire Line
 	1500 3150 2100 3150
 $Comp
-L Connector:Conn_01x07_Male J?
+L Connector:Conn_01x07_Male J6
 U 1 1 60B7F4D8
 P 7900 1650
-F 0 "J?" H 7872 1674 50  0000 R CNN
+F 0 "J6" H 7872 1674 50  0000 R CNN
 F 1 "RS232 (TTL Level)" H 8250 2050 50  0000 R CNN
-F 2 "" H 7900 1650 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x07_P2.54mm_Vertical" H 7900 1650 50  0001 C CNN
 F 3 "~" H 7900 1650 50  0001 C CNN
 	1    7900 1650
 	-1   0    0    -1  
@@ -903,12 +903,12 @@ Wire Notes Line
 Text Notes 900  950  0    50   ~ 0
 Timer / Counter
 $Comp
-L Connector:Conn_01x07_Female J?
+L Connector:Conn_01x07_Female J2
 U 1 1 60D58BEB
 P 3650 2450
-F 0 "J?" H 3678 2476 50  0000 L CNN
+F 0 "J2" H 3678 2476 50  0000 L CNN
 F 1 "TimerCounter" H 3678 2385 50  0000 L CNN
-F 2 "" H 3650 2450 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x07_P2.54mm_Vertical" H 3650 2450 50  0001 C CNN
 F 3 "~" H 3650 2450 50  0001 C CNN
 	1    3650 2450
 	1    0    0    -1  
@@ -936,10 +936,10 @@ Wire Wire Line
 Wire Wire Line
 	3300 2750 3150 2750
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0102
 U 1 1 60DB9FDE
 P 3350 2900
-F 0 "#PWR?" H 3350 2650 50  0001 C CNN
+F 0 "#PWR0102" H 3350 2650 50  0001 C CNN
 F 1 "GND" H 3355 2727 50  0000 C CNN
 F 2 "" H 3350 2900 50  0001 C CNN
 F 3 "" H 3350 2900 50  0001 C CNN
@@ -947,10 +947,10 @@ F 3 "" H 3350 2900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR?
+L power:+5V #PWR0103
 U 1 1 60DC5A53
 P 3600 3050
-F 0 "#PWR?" H 3600 2900 50  0001 C CNN
+F 0 "#PWR0103" H 3600 2900 50  0001 C CNN
 F 1 "+5V" H 3615 3223 50  0000 C CNN
 F 2 "" H 3600 3050 50  0001 C CNN
 F 3 "" H 3600 3050 50  0001 C CNN
@@ -966,23 +966,23 @@ Wire Wire Line
 Wire Wire Line
 	3350 2900 3350 2650
 $Comp
-L Connector:Conn_01x12_Female J?
+L Connector:Conn_01x12_Female J3
 U 1 1 60DE0356
 P 4200 5550
-F 0 "J?" H 4228 5526 50  0000 L CNN
+F 0 "J3" H 4228 5526 50  0000 L CNN
 F 1 "GPIO1" H 4228 5435 50  0000 L CNN
-F 2 "" H 4200 5550 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x12_P2.54mm_Vertical" H 4200 5550 50  0001 C CNN
 F 3 "~" H 4200 5550 50  0001 C CNN
 	1    4200 5550
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:Conn_01x12_Female J?
+L Connector:Conn_01x12_Female J4
 U 1 1 60DE12F5
 P 4650 6600
-F 0 "J?" H 4678 6576 50  0000 L CNN
+F 0 "J4" H 4678 6576 50  0000 L CNN
 F 1 "GPIO2" H 4678 6485 50  0000 L CNN
-F 2 "" H 4650 6600 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x12_P2.54mm_Vertical" H 4650 6600 50  0001 C CNN
 F 3 "~" H 4650 6600 50  0001 C CNN
 	1    4650 6600
 	1    0    0    -1  
@@ -1036,10 +1036,10 @@ Wire Wire Line
 Wire Wire Line
 	3700 5150 4000 5150
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0104
 U 1 1 60E990A1
 P 4600 4950
-F 0 "#PWR?" H 4600 4700 50  0001 C CNN
+F 0 "#PWR0104" H 4600 4700 50  0001 C CNN
 F 1 "GND" H 4605 4777 50  0000 C CNN
 F 2 "" H 4600 4950 50  0001 C CNN
 F 3 "" H 4600 4950 50  0001 C CNN
@@ -1053,6 +1053,72 @@ Wire Notes Line
 	750  4550 4950 4550
 Wire Notes Line
 	750  7700 4950 7700
+$Comp
+L Connector_Generic:Conn_02x22_Odd_Even J7
+U 1 1 60587553
+P 8000 5400
+F 0 "J7" V 8004 6479 50  0000 L CNN
+F 1 "CompactFlash Port" V 8095 6479 50  0000 L CNN
+F 2 "Connector_PinHeader_2.00mm:PinHeader_2x22_P2.00mm_Vertical" H 8000 5400 50  0001 C CNN
+F 3 "~" H 8000 5400 50  0001 C CNN
+	1    8000 5400
+	0    -1   1    0   
+$EndComp
+Text Label 3700 5250 0    50   ~ 0
+PA0
+Text Label 3700 5350 0    50   ~ 0
+PA1
+Text Label 3700 5450 0    50   ~ 0
+PA2
+Text Label 3700 5550 0    50   ~ 0
+PA3
+Text Label 3700 5650 0    50   ~ 0
+PA4
+Text Label 3700 5750 0    50   ~ 0
+PA5
+Text Label 3700 5850 0    50   ~ 0
+PA6
+Text Label 3700 5950 0    50   ~ 0
+PA7
+Text Label 3800 6300 0    50   ~ 0
+PB0
+Text Label 3800 6400 0    50   ~ 0
+PB1
+Text Label 3800 6500 0    50   ~ 0
+PB2
+Text Label 3800 6600 0    50   ~ 0
+PB3
+Text Label 3800 6700 0    50   ~ 0
+PB4
+Text Label 3800 6800 0    50   ~ 0
+PB5
+Text Label 3800 6900 0    50   ~ 0
+PB6
+Text Label 3800 7000 0    50   ~ 0
+PB7
+Text Label 3700 6050 0    50   ~ 0
+PARDY
+Text Label 3700 6150 0    50   ~ 0
+~PASTB
+Text Label 3800 7100 0    50   ~ 0
+PBRDY
+Text Label 3800 7200 0    50   ~ 0
+~PBSTB
+Text Notes 7650 7100 0    39   ~ 0
+Copyright © Jaap Geurts 2021\n\nThis documentation describes Open Hardware and is licensed under the CERN OHL v. 1.1.\nYou may redistribute and modify this documentation under the terms of the CERN OHL v.1.1.\n(http://ohwr.org/cernohl). This documentation is distributed WITHOUT ANY EXPRESS OR IMPLIED\nWARRANTY, INCLUDING OF MERCHANTABILITY, SATISFACTORY QUALITY AND FITNESS FOR A PARTICULAR PURPOSE. \n\nPlease see the CERN OHL v.1.1 for applicable conditions\n
+NoConn ~ 10600 1950
+$Comp
+L power:GND #PWR0131
+U 1 1 611698AC
+P 9400 2250
+F 0 "#PWR0131" H 9400 2000 50  0001 C CNN
+F 1 "GND" H 9405 2077 50  0000 C CNN
+F 2 "" H 9400 2250 50  0001 C CNN
+F 3 "" H 9400 2250 50  0001 C CNN
+	1    9400 2250
+	1    0    0    -1  
+$EndComp
+Connection ~ 9400 2250
 Wire Bus Line
 	2200 7050 2200 7250
 Wire Bus Line

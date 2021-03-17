@@ -21,7 +21,7 @@ AR Path="/601BD65D" Ref="U?"  Part="1"
 AR Path="/6019CF84/601BD65D" Ref="U10"  Part="1" 
 F 0 "U10" H 9000 3350 50  0000 C CNN
 F 1 "HM62256BLP" H 9650 3350 50  0000 C CNN
-F 2 "Package_DIP:DIP-28_W15.24mm" H 9350 2400 50  0001 C CNN
+F 2 "Package_DIP:DIP-28_W15.24mm_Socket_LongPads" H 9350 2400 50  0001 C CNN
 F 3 "https://web.mit.edu/6.115/www/document/62256.pdf" H 9350 2400 50  0001 C CNN
 	1    9350 2500
 	1    0    0    -1  
@@ -108,7 +108,7 @@ AR Path="/601BD689" Ref="U?"  Part="1"
 AR Path="/6019CF84/601BD689" Ref="U6"  Part="1" 
 F 0 "U6" H 2200 3550 50  0000 C CNN
 F 1 "28C64" H 2650 3550 50  0000 C CNN
-F 2 "Package_DIP:DIP-28_W15.24mm" H 2450 2600 50  0001 C CNN
+F 2 "Package_DIP:DIP-28_W15.24mm_Socket_LongPads" H 2450 2600 50  0001 C CNN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/11107M.pdf" H 2450 2600 50  0001 C CNN
 	1    2450 2600
 	1    0    0    -1  
@@ -173,7 +173,7 @@ AR Path="/601BD6A7" Ref="U?"  Part="1"
 AR Path="/6019CF84/601BD6A7" Ref="U7"  Part="1" 
 F 0 "U7" H 3750 3550 50  0000 C CNN
 F 1 "28C64" H 4200 3550 50  0000 C CNN
-F 2 "Package_DIP:DIP-28_W15.24mm" H 4000 2600 50  0001 C CNN
+F 2 "Package_DIP:DIP-28_W15.24mm_Socket_LongPads" H 4000 2600 50  0001 C CNN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/11107M.pdf" H 4000 2600 50  0001 C CNN
 	1    4000 2600
 	1    0    0    -1  
@@ -186,7 +186,7 @@ AR Path="/601BD6AD" Ref="U?"  Part="1"
 AR Path="/6019CF84/601BD6AD" Ref="U8"  Part="1" 
 F 0 "U8" H 6050 1750 50  0000 C CNN
 F 1 "HM6264" H 6500 1750 50  0000 C CNN
-F 2 "Package_DIP:DIP-28_W15.24mm_Socket" H 6300 1700 50  0001 C CNN
+F 2 "Package_DIP:DIP-28_W15.24mm_Socket_LongPads" H 6300 1700 50  0001 C CNN
 F 3 "" H 6300 1700 50  0001 C CNN
 	1    6300 1700
 	1    0    0    -1  
@@ -199,7 +199,7 @@ AR Path="/601BD6B3" Ref="U?"  Part="1"
 AR Path="/6019CF84/601BD6B3" Ref="U9"  Part="1" 
 F 0 "U9" H 7550 1750 50  0000 C CNN
 F 1 "HM6264" H 8000 1750 50  0000 C CNN
-F 2 "Package_DIP:DIP-28_W15.24mm_Socket" H 7800 1700 50  0001 C CNN
+F 2 "Package_DIP:DIP-28_W15.24mm_Socket_LongPads" H 7800 1700 50  0001 C CNN
 F 3 "" H 7800 1700 50  0001 C CNN
 	1    7800 1700
 	1    0    0    -1  
@@ -940,12 +940,12 @@ Wire Bus Line
 $Comp
 L Graphic:Logo_Open_Hardware_Small #LOGO2
 U 1 1 60393FA4
-P 10850 6900
-F 0 "#LOGO2" H 10850 7175 50  0001 C CNN
-F 1 "Logo_Open_Hardware_Small" H 10850 6675 50  0001 C CNN
-F 2 "" H 10850 6900 50  0001 C CNN
-F 3 "~" H 10850 6900 50  0001 C CNN
-	1    10850 6900
+P 7250 6800
+F 0 "#LOGO2" H 7250 7075 50  0001 C CNN
+F 1 "Logo_Open_Hardware_Small" H 7250 6575 50  0001 C CNN
+F 2 "" H 7250 6800 50  0001 C CNN
+F 3 "~" H 7250 6800 50  0001 C CNN
+	1    7250 6800
 	1    0    0    -1  
 $EndComp
 Text GLabel 3400 3400 0    50   Input ~ 0
@@ -1041,4 +1041,6 @@ Wire Bus Line
 	1750 1200 1750 2900
 Wire Bus Line
 	8600 1200 8600 3100
+Text Notes 7600 7100 0    39   ~ 0
+Copyright © Jaap Geurts 2021\n\nThis documentation describes Open Hardware and is licensed under the CERN OHL v. 1.1.\nYou may redistribute and modify this documentation under the terms of the CERN OHL v.1.1.\n(http://ohwr.org/cernohl). This documentation is distributed WITHOUT ANY EXPRESS OR IMPLIED\nWARRANTY, INCLUDING OF MERCHANTABILITY, SATISFACTORY QUALITY AND FITNESS FOR A PARTICULAR PURPOSE. \n\nPlease see the CERN OHL v.1.1 for applicable conditions\n
 $EndSCHEMATC

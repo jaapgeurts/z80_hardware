@@ -21,7 +21,7 @@ AR Path="/608E4763" Ref="U?"  Part="1"
 AR Path="/608D2E51/608E4763" Ref="U15"  Part="1" 
 F 0 "U15" H 2650 4250 50  0000 C CNN
 F 1 "Z80CPU" H 3500 4250 50  0000 C CNN
-F 2 "Package_DIP:DIP-40_W15.24mm_Socket" H 3150 3250 50  0001 C CNN
+F 2 "Package_DIP:DIP-40_W15.24mm_Socket_LongPads" H 3150 3250 50  0001 C CNN
 F 3 "www.zilog.com/manage_directlink.php?filepath=docs/z80/um0080" H 3150 3250 50  0001 C CNN
 	1    3150 2850
 	1    0    0    -1  
@@ -249,7 +249,7 @@ AR Path="/608E47DA" Ref="R?"  Part="1"
 AR Path="/608D2E51/608E47DA" Ref="R16"  Part="1" 
 F 0 "R16" H 1970 2146 50  0000 L CNN
 F 1 "10k" H 1970 2055 50  0000 L CNN
-F 2 "" V 1830 2100 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 1830 2100 50  0001 C CNN
 F 3 "~" H 1900 2100 50  0001 C CNN
 	1    1900 2100
 	1    0    0    -1  
@@ -314,7 +314,7 @@ AR Path="/608F835A" Ref="U?"  Part="1"
 AR Path="/608D2E51/608F835A" Ref="U17"  Part="1" 
 F 0 "U17" H 8000 2600 50  0000 C CNN
 F 1 "GAL16V8" H 8500 2600 50  0000 C CNN
-F 2 "" H 8300 2000 50  0001 C CNN
+F 2 "Package_DIP:DIP-20_W7.62mm_Socket_LongPads" H 8300 2000 50  0001 C CNN
 F 3 "" H 8300 2000 50  0001 C CNN
 	1    8300 2000
 	1    0    0    -1  
@@ -371,20 +371,6 @@ Text GLabel 7350 4000 0    50   Input ~ 0
 ~M1
 Wire Wire Line
 	8850 3700 8750 3700
-$Comp
-L Logic_Programmable:GAL16V8 U?
-U 1 1 608F837A
-P 8250 4200
-AR Path="/608F837A" Ref="U?"  Part="1" 
-AR Path="/608D2E51/608F837A" Ref="U16"  Part="1" 
-F 0 "U16" H 7950 4800 50  0000 C CNN
-F 1 "GAL16V8" H 8450 4800 50  0000 C CNN
-F 2 "" H 8250 4200 50  0001 C CNN
-F 3 "" H 8250 4200 50  0001 C CNN
-	1    8250 4200
-	1    0    0    -1  
-$EndComp
-NoConn ~ 8750 4400
 Text GLabel 7650 1500 0    50   Input ~ 0
 ~RD
 Text GLabel 7450 1600 0    50   Input ~ 0
@@ -460,12 +446,12 @@ Wire Wire Line
 $Comp
 L Graphic:Logo_Open_Hardware_Small #LOGO5
 U 1 1 60AB7C21
-P 10900 6900
-F 0 "#LOGO5" H 10900 7175 50  0001 C CNN
-F 1 "Logo_Open_Hardware_Small" H 10900 6675 50  0001 C CNN
-F 2 "" H 10900 6900 50  0001 C CNN
-F 3 "~" H 10900 6900 50  0001 C CNN
-	1    10900 6900
+P 7250 6800
+F 0 "#LOGO5" H 7250 7075 50  0001 C CNN
+F 1 "Logo_Open_Hardware_Small" H 7250 6575 50  0001 C CNN
+F 2 "" H 7250 6800 50  0001 C CNN
+F 3 "~" H 7250 6800 50  0001 C CNN
+	1    7250 6800
 	1    0    0    -1  
 $EndComp
 Text GLabel 9100 4100 2    50   Output ~ 0
@@ -484,223 +470,223 @@ Text GLabel 9100 4300 2    50   Output ~ 0
 Wire Wire Line
 	8750 4300 9100 4300
 $Comp
-L Connector_Generic:Conn_02x20_Odd_Even J?
+L Connector_Generic:Conn_02x20_Odd_Even J11
 U 1 1 608F92BA
-P 2750 6200
-F 0 "J?" H 2800 7317 50  0000 C CNN
-F 1 "Expansion Bus" H 2800 7226 50  0000 C CNN
-F 2 "" H 2750 6200 50  0001 C CNN
-F 3 "~" H 2750 6200 50  0001 C CNN
-	1    2750 6200
+P 2700 6350
+F 0 "J11" H 2750 7467 50  0000 C CNN
+F 1 "Expansion Bus" H 2750 7376 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x20_P2.54mm_Vertical" H 2700 6350 50  0001 C CNN
+F 3 "~" H 2700 6350 50  0001 C CNN
+	1    2700 6350
 	1    0    0    -1  
 $EndComp
 Text GLabel 4450 1400 2    50   Output ~ 0
 A[0..14]
 Wire Bus Line
-	1850 5100 2150 5100
-Text GLabel 1850 5100 0    50   Input ~ 0
+	1800 5250 2100 5250
+Text GLabel 1800 5250 0    50   Input ~ 0
 A[0..14]
 Entry Wire Line
-	2150 5300 2250 5400
+	2100 5450 2200 5550
 Entry Wire Line
-	2150 5400 2250 5500
+	2100 5550 2200 5650
 Entry Wire Line
-	2150 5500 2250 5600
+	2100 5650 2200 5750
 Entry Wire Line
-	2150 5600 2250 5700
+	2100 5750 2200 5850
 Entry Wire Line
-	2150 5700 2250 5800
+	2100 5850 2200 5950
 Entry Wire Line
-	2150 5800 2250 5900
+	2100 5950 2200 6050
 Entry Wire Line
-	2150 5900 2250 6000
+	2100 6050 2200 6150
 Entry Wire Line
-	2150 6000 2250 6100
+	2100 6150 2200 6250
 Entry Wire Line
-	2150 6100 2250 6200
+	2100 6250 2200 6350
 Entry Wire Line
-	2150 6200 2250 6300
+	2100 6350 2200 6450
 Entry Wire Line
-	2150 6300 2250 6400
+	2100 6450 2200 6550
 Entry Wire Line
-	2150 6400 2250 6500
+	2100 6550 2200 6650
 Entry Wire Line
-	2150 6500 2250 6600
+	2100 6650 2200 6750
 Entry Wire Line
-	2150 6600 2250 6700
+	2100 6750 2200 6850
 Entry Wire Line
-	2150 6700 2250 6800
+	2100 6850 2200 6950
 Wire Wire Line
-	2250 5400 2550 5400
+	2200 5550 2500 5550
 Wire Wire Line
-	2250 5500 2550 5500
+	2200 5650 2500 5650
 Wire Wire Line
-	2250 5600 2550 5600
+	2200 5750 2500 5750
 Wire Wire Line
-	2250 5700 2550 5700
+	2200 5850 2500 5850
 Wire Wire Line
-	2250 5800 2550 5800
+	2200 5950 2500 5950
 Wire Wire Line
-	2250 5900 2550 5900
+	2200 6050 2500 6050
 Wire Wire Line
-	2250 6000 2550 6000
+	2200 6150 2500 6150
 Wire Wire Line
-	2250 6100 2550 6100
+	2200 6250 2500 6250
 Wire Wire Line
-	2250 6200 2550 6200
+	2200 6350 2500 6350
 Wire Wire Line
-	2250 6300 2550 6300
+	2200 6450 2500 6450
 Wire Wire Line
-	2250 6400 2550 6400
+	2200 6550 2500 6550
 Wire Wire Line
-	2250 6500 2550 6500
+	2200 6650 2500 6650
 Wire Wire Line
-	2250 6600 2550 6600
+	2200 6750 2500 6750
 Wire Wire Line
-	2250 6700 2550 6700
+	2200 6850 2500 6850
 Wire Wire Line
-	2250 6800 2550 6800
-Text Label 2350 5400 0    50   ~ 0
+	2200 6950 2500 6950
+Text Label 2300 5550 0    50   ~ 0
 A0
-Text Label 2350 5500 0    50   ~ 0
+Text Label 2300 5650 0    50   ~ 0
 A1
-Text Label 2350 5600 0    50   ~ 0
+Text Label 2300 5750 0    50   ~ 0
 A2
-Text Label 2350 5700 0    50   ~ 0
+Text Label 2300 5850 0    50   ~ 0
 A3
-Text Label 2350 5800 0    50   ~ 0
+Text Label 2300 5950 0    50   ~ 0
 A4
-Text Label 2350 5900 0    50   ~ 0
+Text Label 2300 6050 0    50   ~ 0
 A5
-Text Label 2350 6000 0    50   ~ 0
+Text Label 2300 6150 0    50   ~ 0
 A6
-Text Label 2350 6100 0    50   ~ 0
+Text Label 2300 6250 0    50   ~ 0
 A7
-Text Label 2350 6200 0    50   ~ 0
+Text Label 2300 6350 0    50   ~ 0
 A8
-Text Label 2350 6300 0    50   ~ 0
+Text Label 2300 6450 0    50   ~ 0
 A9
-Text Label 2350 6400 0    50   ~ 0
+Text Label 2300 6550 0    50   ~ 0
 A10
-Text Label 2350 6500 0    50   ~ 0
+Text Label 2300 6650 0    50   ~ 0
 A11
-Text Label 2350 6600 0    50   ~ 0
+Text Label 2300 6750 0    50   ~ 0
 A12
-Text Label 2350 6700 0    50   ~ 0
+Text Label 2300 6850 0    50   ~ 0
 A13
-Text Label 2350 6800 0    50   ~ 0
+Text Label 2300 6950 0    50   ~ 0
 A14
-Text Label 2350 6900 0    50   ~ 0
+Text Label 2300 7050 0    50   ~ 0
 A15
 Entry Wire Line
-	2150 6800 2250 6900
+	2100 6950 2200 7050
 Wire Wire Line
-	2250 6900 2550 6900
-Text GLabel 3600 5100 2    50   BiDi ~ 0
+	2200 7050 2500 7050
+Text GLabel 3550 5250 2    50   BiDi ~ 0
 D[0..7]
 Wire Bus Line
-	3600 5100 3500 5100
+	3550 5250 3450 5250
 Entry Wire Line
-	3400 5400 3500 5300
+	3350 5550 3450 5450
 Entry Wire Line
-	3400 5500 3500 5400
+	3350 5650 3450 5550
 Entry Wire Line
-	3400 5600 3500 5500
+	3350 5750 3450 5650
 Entry Wire Line
-	3400 5700 3500 5600
+	3350 5850 3450 5750
 Entry Wire Line
-	3400 5800 3500 5700
+	3350 5950 3450 5850
 Entry Wire Line
-	3400 5900 3500 5800
+	3350 6050 3450 5950
 Entry Wire Line
-	3400 6000 3500 5900
+	3350 6150 3450 6050
 Entry Wire Line
-	3400 6100 3500 6000
+	3350 6250 3450 6150
 Wire Wire Line
-	3050 5400 3400 5400
+	3000 5550 3350 5550
 Wire Wire Line
-	3050 5500 3400 5500
+	3000 5650 3350 5650
 Wire Wire Line
-	3050 5600 3400 5600
+	3000 5750 3350 5750
 Wire Wire Line
-	3050 5700 3400 5700
+	3000 5850 3350 5850
 Wire Wire Line
-	3050 5800 3400 5800
+	3000 5950 3350 5950
 Wire Wire Line
-	3050 5900 3400 5900
+	3000 6050 3350 6050
 Wire Wire Line
-	3050 6000 3400 6000
+	3000 6150 3350 6150
 Wire Wire Line
-	3050 6100 3400 6100
-Text Label 3150 5400 0    50   ~ 0
+	3000 6250 3350 6250
+Text Label 3100 5550 0    50   ~ 0
 D0
-Text Label 3150 5500 0    50   ~ 0
+Text Label 3100 5650 0    50   ~ 0
 D1
-Text Label 3150 5600 0    50   ~ 0
+Text Label 3100 5750 0    50   ~ 0
 D2
-Text Label 3150 5700 0    50   ~ 0
+Text Label 3100 5850 0    50   ~ 0
 D3
-Text Label 3150 5800 0    50   ~ 0
+Text Label 3100 5950 0    50   ~ 0
 D4
-Text Label 3150 5900 0    50   ~ 0
+Text Label 3100 6050 0    50   ~ 0
 D5
-Text Label 3150 6000 0    50   ~ 0
+Text Label 3100 6150 0    50   ~ 0
 D6
-Text Label 3150 6100 0    50   ~ 0
+Text Label 3100 6250 0    50   ~ 0
 D7
-Text GLabel 3200 6200 2    50   Input ~ 0
+Text GLabel 3150 6350 2    50   Input ~ 0
 ~RD
-Text GLabel 3450 6300 2    50   Input ~ 0
+Text GLabel 3400 6450 2    50   Input ~ 0
 ~WR
-Text GLabel 3200 6400 2    50   Input ~ 0
+Text GLabel 3150 6550 2    50   Input ~ 0
 ~IORQ
 Wire Wire Line
-	3450 6300 3050 6300
-Text GLabel 3200 6600 2    50   Input ~ 0
+	3400 6450 3000 6450
+Text GLabel 3150 6750 2    50   Input ~ 0
 ~M1
 Wire Wire Line
-	3200 6200 3050 6200
+	3150 6350 3000 6350
 Wire Wire Line
-	3050 6400 3200 6400
+	3000 6550 3150 6550
 Wire Wire Line
-	3200 6600 3050 6600
-Text GLabel 3450 6500 2    50   Input ~ 0
+	3150 6750 3000 6750
+Text GLabel 3400 6650 2    50   Input ~ 0
 ~MREQ
 Wire Wire Line
-	3450 6500 3050 6500
-Text GLabel 3200 6800 2    50   Output ~ 0
+	3400 6650 3000 6650
+Text GLabel 3150 6950 2    50   Output ~ 0
 ~NMI
-Text GLabel 3450 6700 2    50   Output ~ 0
+Text GLabel 3400 6850 2    50   Output ~ 0
 ~INT
 Wire Wire Line
-	3450 6700 3050 6700
+	3400 6850 3000 6850
 Wire Wire Line
-	3200 6800 3050 6800
+	3150 6950 3000 6950
 Wire Wire Line
-	3450 6900 3050 6900
-Text GLabel 3450 6900 2    50   BiDi ~ 0
+	3400 7050 3000 7050
+Text GLabel 3400 7050 2    50   BiDi ~ 0
 ~RESET
-Text GLabel 3200 7000 2    50   Input ~ 0
+Text GLabel 3150 7150 2    50   Input ~ 0
 CLK
 Wire Wire Line
-	3200 7000 3050 7000
+	3150 7150 3000 7150
 Text GLabel 2150 2750 0    50   Output ~ 0
 ~RFSH
 Wire Wire Line
 	2450 2750 2150 2750
-Text GLabel 2500 7000 0    50   Input ~ 0
+Text GLabel 2450 7150 0    50   Input ~ 0
 ~RFSH
 Wire Wire Line
-	2500 7000 2550 7000
+	2450 7150 2500 7150
 $Comp
 L Device:R R?
 U 1 1 60A55014
 P 1450 2850
 AR Path="/60A55014" Ref="R?"  Part="1" 
-AR Path="/608D2E51/60A55014" Ref="R?"  Part="1" 
-F 0 "R?" H 1520 2896 50  0000 L CNN
+AR Path="/608D2E51/60A55014" Ref="R26"  Part="1" 
+F 0 "R26" H 1520 2896 50  0000 L CNN
 F 1 "10k" H 1520 2805 50  0000 L CNN
-F 2 "" V 1380 2850 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 1380 2850 50  0001 C CNN
 F 3 "~" H 1450 2850 50  0001 C CNN
 	1    1450 2850
 	0    1    1    0   
@@ -715,10 +701,10 @@ L Device:R R?
 U 1 1 60A6FC00
 P 1450 3950
 AR Path="/60A6FC00" Ref="R?"  Part="1" 
-AR Path="/608D2E51/60A6FC00" Ref="R?"  Part="1" 
-F 0 "R?" H 1520 3996 50  0000 L CNN
+AR Path="/608D2E51/60A6FC00" Ref="R27"  Part="1" 
+F 0 "R27" H 1520 3996 50  0000 L CNN
 F 1 "10k" H 1520 3905 50  0000 L CNN
-F 2 "" V 1380 3950 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 1380 3950 50  0001 C CNN
 F 3 "~" H 1450 3950 50  0001 C CNN
 	1    1450 3950
 	0    1    1    0   
@@ -755,7 +741,7 @@ AR Path="/608E47E0" Ref="R?"  Part="1"
 AR Path="/608D2E51/608E47E0" Ref="R15"  Part="1" 
 F 0 "R15" H 1670 2146 50  0000 L CNN
 F 1 "10k" H 1670 2055 50  0000 L CNN
-F 2 "" V 1530 2100 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 1530 2100 50  0001 C CNN
 F 3 "~" H 1600 2100 50  0001 C CNN
 	1    1600 2100
 	1    0    0    -1  
@@ -790,63 +776,128 @@ Text GLabel 2200 2950 0    50   Output ~ 0
 ~HALT
 Wire Wire Line
 	2200 2950 2450 2950
-Text GLabel 3550 7100 2    50   Input ~ 0
+Text GLabel 3500 7250 2    50   Input ~ 0
 ~HALT
 Wire Wire Line
-	3550 7100 3050 7100
-Text GLabel 2100 7100 0    50   Input ~ 0
+	3500 7250 3000 7250
+Text GLabel 2050 7250 0    50   Input ~ 0
 ~WAIT
 Wire Wire Line
-	2100 7100 2550 7100
-Text GLabel 2450 7200 0    50   Output ~ 0
+	2050 7250 2500 7250
+Text GLabel 2400 7350 0    50   Output ~ 0
 ~BUSRQ
 Wire Wire Line
-	2450 7200 2550 7200
-Text GLabel 3200 7200 2    50   Input ~ 0
+	2400 7350 2500 7350
+Text GLabel 3150 7350 2    50   Input ~ 0
 ~BUSACK
 Wire Wire Line
-	3200 7200 3050 7200
+	3150 7350 3000 7350
 $Comp
 L power:GND #PWR?
 U 1 1 60B4795F
-P 3850 5350
+P 3800 5500
 AR Path="/60B4795F" Ref="#PWR?"  Part="1" 
-AR Path="/608D2E51/60B4795F" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 3850 5100 50  0001 C CNN
-F 1 "GND" H 3855 5177 50  0000 C CNN
-F 2 "" H 3850 5350 50  0001 C CNN
-F 3 "" H 3850 5350 50  0001 C CNN
-	1    3850 5350
+AR Path="/608D2E51/60B4795F" Ref="#PWR0128"  Part="1" 
+F 0 "#PWR0128" H 3800 5250 50  0001 C CNN
+F 1 "GND" H 3805 5327 50  0000 C CNN
+F 2 "" H 3800 5500 50  0001 C CNN
+F 3 "" H 3800 5500 50  0001 C CNN
+	1    3800 5500
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3850 5350 3850 5300
+	3800 5500 3800 5450
 $Comp
 L power:+5V #PWR?
 U 1 1 60B50140
-P 2400 5000
+P 2350 5150
 AR Path="/60B50140" Ref="#PWR?"  Part="1" 
 AR Path="/6019CF84/60B50140" Ref="#PWR?"  Part="1" 
-AR Path="/608D2E51/60B50140" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 2400 4850 50  0001 C CNN
-F 1 "+5V" H 2415 5173 50  0000 C CNN
-F 2 "" H 2400 5000 50  0001 C CNN
-F 3 "" H 2400 5000 50  0001 C CNN
-	1    2400 5000
+AR Path="/608D2E51/60B50140" Ref="#PWR0129"  Part="1" 
+F 0 "#PWR0129" H 2350 5000 50  0001 C CNN
+F 1 "+5V" H 2365 5323 50  0000 C CNN
+F 2 "" H 2350 5150 50  0001 C CNN
+F 3 "" H 2350 5150 50  0001 C CNN
+	1    2350 5150
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2550 5300 2400 5300
+	2500 5450 2350 5450
 Wire Wire Line
-	2400 5300 2400 5000
+	2350 5450 2350 5150
+$Comp
+L Logic_Programmable:GAL16V8 U?
+U 1 1 608F837A
+P 8250 4200
+AR Path="/608F837A" Ref="U?"  Part="1" 
+AR Path="/608D2E51/608F837A" Ref="U16"  Part="1" 
+F 0 "U16" H 7950 4800 50  0000 C CNN
+F 1 "GAL16V8" H 8450 4800 50  0000 C CNN
+F 2 "Package_DIP:DIP-20_W7.62mm_Socket_LongPads" H 8250 4200 50  0001 C CNN
+F 3 "" H 8250 4200 50  0001 C CNN
+	1    8250 4200
+	1    0    0    -1  
+$EndComp
+Text GLabel 8850 4400 2    50   Output ~ 0
+~CFS
 Wire Wire Line
-	3050 5300 3850 5300
+	8750 4400 8850 4400
+$Comp
+L Switch:SW_Push SW5
+U 1 1 60EA24AF
+P 5150 4300
+F 0 "SW5" H 5150 4585 50  0000 C CNN
+F 1 "NMI" H 5150 4494 50  0000 C CNN
+F 2 "" H 5150 4500 50  0001 C CNN
+F 3 "~" H 5150 4500 50  0001 C CNN
+	1    5150 4300
+	1    0    0    -1  
+$EndComp
+Text GLabel 4950 4300 0    50   Input ~ 0
+~NMI
+$Comp
+L power:GND #PWR?
+U 1 1 60EA2A0E
+P 5350 4300
+AR Path="/60EA2A0E" Ref="#PWR?"  Part="1" 
+AR Path="/608D2E51/60EA2A0E" Ref="#PWR0130"  Part="1" 
+F 0 "#PWR0130" H 5350 4050 50  0001 C CNN
+F 1 "GND" H 5355 4127 50  0000 C CNN
+F 2 "" H 5350 4300 50  0001 C CNN
+F 3 "" H 5350 4300 50  0001 C CNN
+	1    5350 4300
+	1    0    0    -1  
+$EndComp
+Text Notes 7600 7100 0    39   ~ 0
+Copyright © Jaap Geurts 2021\n\nThis documentation describes Open Hardware and is licensed under the CERN OHL v. 1.1.\nYou may redistribute and modify this documentation under the terms of the CERN OHL v.1.1.\n(http://ohwr.org/cernohl). This documentation is distributed WITHOUT ANY EXPRESS OR IMPLIED\nWARRANTY, INCLUDING OF MERCHANTABILITY, SATISFACTORY QUALITY AND FITNESS FOR A PARTICULAR PURPOSE. \n\nPlease see the CERN OHL v.1.1 for applicable conditions\n
+Wire Notes Line
+	4400 4750 4400 7650
+Wire Notes Line
+	4400 7650 1100 7650
+Wire Notes Line
+	1100 7650 1100 4750
+Wire Notes Line
+	1100 4750 4400 4750
+Text Notes 1200 4850 0    50   ~ 0
+Expansion bus
+Wire Notes Line
+	850  900  850  4650
+Wire Notes Line
+	850  4650 5500 4650
+Wire Notes Line
+	5500 4650 5500 900 
+Wire Notes Line
+	5500 900  850  900 
+Wire Wire Line
+	3000 5450 3800 5450
 Wire Bus Line
-	3500 5100 3500 6000
+	3450 5250 3450 6150
 Wire Bus Line
 	4250 3200 4250 3950
 Wire Bus Line
 	4150 1400 4150 2950
 Wire Bus Line
-	2150 5100 2150 6800
+	2100 5250 2100 6950
+Text Notes 1000 1050 0    47   ~ 0
+CPU
 $EndSCHEMATC
