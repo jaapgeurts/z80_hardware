@@ -228,6 +228,33 @@ X D5 9 700 -1000 150 L 50 50 1 1 B
 ENDDRAW
 ENDDEF
 #
+# Connector_AudioJack2_Ground_Switch
+#
+DEF Connector_AudioJack2_Ground_Switch J 0 20 Y Y 1 F N
+F0 "J" 0 450 50 H V C CNN
+F1 "Connector_AudioJack2_Ground_Switch" 0 350 50 H V C CNN
+F2 "" 0 200 50 H I C CNN
+F3 "" 0 200 50 H I C CNN
+$FPLIST
+ Jack*
+$ENDFPLIST
+DRAW
+S -100 -100 -150 0 0 1 10 F
+S 100 250 -100 -200 0 1 10 f
+P 2 1 1 0 25 190 35 170 N
+P 2 1 1 0 70 -10 80 -30 N
+P 4 1 1 10 0 0 25 -25 50 0 100 0 N
+P 4 1 1 0 100 -100 70 -100 70 -10 60 -30 N
+P 4 1 1 0 100 100 25 100 25 190 15 170 N
+P 5 1 1 10 100 200 -25 200 -25 0 -50 -25 -75 0 N
+X ~ G 0 -300 100 U 50 50 1 1 P
+X ~ S 200 200 100 L 50 50 1 1 P
+X ~ SN 200 100 100 L 50 50 1 1 P
+X ~ T 200 0 100 L 50 50 1 1 P
+X ~ TN 200 -100 100 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
 # Connector_Barrel_Jack_MountingPin
 #
 DEF Connector_Barrel_Jack_MountingPin J 0 20 Y N 1 F N
@@ -253,28 +280,23 @@ X MountPin MP 0 -300 120 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Connector_Barrel_Jack_Switch
+# Connector_Conn_01x02_Male
 #
-DEF Connector_Barrel_Jack_Switch J 0 20 Y N 1 F N
-F0 "J" 0 210 50 H V C CNN
-F1 "Connector_Barrel_Jack_Switch" 0 -200 50 H V C CNN
-F2 "" 50 -40 50 H I C CNN
-F3 "" 50 -40 50 H I C CNN
+DEF Connector_Conn_01x02_Male J 0 40 Y N 1 F N
+F0 "J" 0 100 50 H V C CNN
+F1 "Connector_Conn_01x02_Male" 0 -200 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
 $FPLIST
- BarrelJack*
+ Connector*:*_1x??_*
 $ENDFPLIST
 DRAW
-A -130 100 25 901 -901 0 1 10 F -130 125 -130 75
-A -130 100 25 901 -901 0 1 10 N -130 125 -130 75
-S -200 150 200 -150 0 1 10 f
-S 145 125 -130 75 0 1 10 F
-P 2 0 1 10 50 -90 75 -65 N
-P 2 0 1 10 200 100 150 100 N
-P 4 0 1 10 200 0 50 0 50 -90 25 -65 N
-P 6 0 1 10 -150 -100 -100 -100 -50 -50 0 -100 100 -100 200 -100 N
-X ~ 1 300 100 100 L 50 50 1 1 P
-X ~ 2 300 -100 100 L 50 50 1 1 P
-X ~ 3 300 0 100 L 50 50 1 1 P
+S 34 -95 0 -105 1 1 6 F
+S 34 5 0 -5 1 1 6 F
+P 2 1 1 6 50 -100 34 -100 N
+P 2 1 1 6 50 0 34 0 N
+X Pin_1 1 200 0 150 L 50 50 1 1 P
+X Pin_2 2 200 -100 150 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
@@ -654,6 +676,23 @@ X ~ 6 -300 100 100 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
+# Connector_TestPoint
+#
+DEF Connector_TestPoint TP 0 30 N N 1 F N
+F0 "TP" 0 270 50 H V C CNN
+F1 "Connector_TestPoint" 0 200 50 H V C CNN
+F2 "" 200 0 50 H I C CNN
+F3 "" 200 0 50 H I C CNN
+$FPLIST
+ Pin*
+ Test*
+$ENDFPLIST
+DRAW
+C 0 130 30 0 1 0 N
+X 1 1 0 0 100 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
 # Device_Battery_Cell
 #
 DEF Device_Battery_Cell BT 0 0 N N 1 F N
@@ -910,6 +949,29 @@ P 2 0 1 0 0 -50 0 -20 N
 X A 1 -250 0 100 R 50 50 1 1 P
 X C 2 0 -150 100 U 50 50 1 1 I
 X B 3 250 0 100 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Jumper_SolderJumper_2_Bridged
+#
+DEF Jumper_SolderJumper_2_Bridged JP 0 0 Y N 1 F N
+F0 "JP" 0 80 50 H V C CNN
+F1 "Jumper_SolderJumper_2_Bridged" 0 -100 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ SolderJumper*Bridged*
+$ENDFPLIST
+DRAW
+A -10 0 40 901 -901 0 1 0 N -10 40 -10 -40
+A -10 0 40 901 -901 0 1 0 F -10 40 -10 -40
+A 10 0 40 -899 899 0 1 0 N 10 -40 10 40
+A 10 0 40 -899 899 0 1 0 F 10 -40 10 40
+S -20 20 20 -20 0 1 0 F
+P 2 0 1 0 -10 40 -10 -40 N
+P 2 0 1 0 10 40 10 -40 N
+X A 1 -150 0 100 R 50 50 1 1 P
+X B 2 150 0 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #

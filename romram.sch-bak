@@ -29,27 +29,14 @@ $EndComp
 $Comp
 L power:+5V #PWR?
 U 1 1 601BD663
-P 9350 1600
+P 9350 1550
 AR Path="/601BD663" Ref="#PWR?"  Part="1" 
 AR Path="/6019CF84/601BD663" Ref="#PWR023"  Part="1" 
-F 0 "#PWR023" H 9350 1450 50  0001 C CNN
-F 1 "+5V" H 9365 1773 50  0000 C CNN
-F 2 "" H 9350 1600 50  0001 C CNN
-F 3 "" H 9350 1600 50  0001 C CNN
-	1    9350 1600
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 601BD669
-P 9350 3400
-AR Path="/601BD669" Ref="#PWR?"  Part="1" 
-AR Path="/6019CF84/601BD669" Ref="#PWR024"  Part="1" 
-F 0 "#PWR024" H 9350 3150 50  0001 C CNN
-F 1 "GND" H 9355 3227 50  0000 C CNN
-F 2 "" H 9350 3400 50  0001 C CNN
-F 3 "" H 9350 3400 50  0001 C CNN
-	1    9350 3400
+F 0 "#PWR023" H 9350 1400 50  0001 C CNN
+F 1 "+5V" H 9365 1723 50  0000 C CNN
+F 2 "" H 9350 1550 50  0001 C CNN
+F 3 "" H 9350 1550 50  0001 C CNN
+	1    9350 1550
 	1    0    0    -1  
 $EndComp
 Entry Wire Line
@@ -114,55 +101,29 @@ F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/11107M.pdf" H 2450 2600 50 
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
-U 1 1 601BD68F
-P 2450 3700
-AR Path="/601BD68F" Ref="#PWR?"  Part="1" 
-AR Path="/6019CF84/601BD68F" Ref="#PWR014"  Part="1" 
-F 0 "#PWR014" H 2450 3450 50  0001 C CNN
-F 1 "GND" H 2455 3527 50  0000 C CNN
-F 2 "" H 2450 3700 50  0001 C CNN
-F 3 "" H 2450 3700 50  0001 C CNN
-	1    2450 3700
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 601BD695
-P 6300 3650
-AR Path="/601BD695" Ref="#PWR?"  Part="1" 
-AR Path="/6019CF84/601BD695" Ref="#PWR019"  Part="1" 
-F 0 "#PWR019" H 6300 3400 50  0001 C CNN
-F 1 "GND" H 6305 3477 50  0000 C CNN
-F 2 "" H 6300 3650 50  0001 C CNN
-F 3 "" H 6300 3650 50  0001 C CNN
-	1    6300 3650
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:+5V #PWR?
 U 1 1 601BD69B
-P 2450 1600
+P 2450 1550
 AR Path="/601BD69B" Ref="#PWR?"  Part="1" 
 AR Path="/6019CF84/601BD69B" Ref="#PWR013"  Part="1" 
-F 0 "#PWR013" H 2450 1450 50  0001 C CNN
-F 1 "+5V" H 2465 1773 50  0000 C CNN
-F 2 "" H 2450 1600 50  0001 C CNN
-F 3 "" H 2450 1600 50  0001 C CNN
-	1    2450 1600
+F 0 "#PWR013" H 2450 1400 50  0001 C CNN
+F 1 "+5V" H 2465 1723 50  0000 C CNN
+F 2 "" H 2450 1550 50  0001 C CNN
+F 3 "" H 2450 1550 50  0001 C CNN
+	1    2450 1550
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:+5V #PWR?
 U 1 1 601BD6A1
-P 6300 1550
+P 6300 1500
 AR Path="/601BD6A1" Ref="#PWR?"  Part="1" 
 AR Path="/6019CF84/601BD6A1" Ref="#PWR018"  Part="1" 
-F 0 "#PWR018" H 6300 1400 50  0001 C CNN
-F 1 "+5V" H 6315 1723 50  0000 C CNN
-F 2 "" H 6300 1550 50  0001 C CNN
-F 3 "" H 6300 1550 50  0001 C CNN
-	1    6300 1550
+F 0 "#PWR018" H 6300 1350 50  0001 C CNN
+F 1 "+5V" H 6315 1673 50  0000 C CNN
+F 2 "" H 6300 1500 50  0001 C CNN
+F 3 "" H 6300 1500 50  0001 C CNN
+	1    6300 1500
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -207,53 +168,53 @@ $EndComp
 $Comp
 L power:+5V #PWR?
 U 1 1 601BD6B9
-P 7800 1550
+P 7800 1500
 AR Path="/601BD6B9" Ref="#PWR?"  Part="1" 
 AR Path="/6019CF84/601BD6B9" Ref="#PWR021"  Part="1" 
-F 0 "#PWR021" H 7800 1400 50  0001 C CNN
-F 1 "+5V" H 7815 1723 50  0000 C CNN
-F 2 "" H 7800 1550 50  0001 C CNN
-F 3 "" H 7800 1550 50  0001 C CNN
-	1    7800 1550
+F 0 "#PWR021" H 7800 1350 50  0001 C CNN
+F 1 "+5V" H 7815 1673 50  0000 C CNN
+F 2 "" H 7800 1500 50  0001 C CNN
+F 3 "" H 7800 1500 50  0001 C CNN
+	1    7800 1500
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 601BD6BF
-P 7800 3650
+P 7800 3850
 AR Path="/601BD6BF" Ref="#PWR?"  Part="1" 
 AR Path="/6019CF84/601BD6BF" Ref="#PWR022"  Part="1" 
-F 0 "#PWR022" H 7800 3400 50  0001 C CNN
-F 1 "GND" H 7805 3477 50  0000 C CNN
-F 2 "" H 7800 3650 50  0001 C CNN
-F 3 "" H 7800 3650 50  0001 C CNN
-	1    7800 3650
+F 0 "#PWR022" H 7800 3600 50  0001 C CNN
+F 1 "GND" H 7805 3677 50  0000 C CNN
+F 2 "" H 7800 3850 50  0001 C CNN
+F 3 "" H 7800 3850 50  0001 C CNN
+	1    7800 3850
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:+5V #PWR?
 U 1 1 601BD6C5
-P 4000 1600
+P 4000 1550
 AR Path="/601BD6C5" Ref="#PWR?"  Part="1" 
 AR Path="/6019CF84/601BD6C5" Ref="#PWR016"  Part="1" 
-F 0 "#PWR016" H 4000 1450 50  0001 C CNN
-F 1 "+5V" H 4015 1773 50  0000 C CNN
-F 2 "" H 4000 1600 50  0001 C CNN
-F 3 "" H 4000 1600 50  0001 C CNN
-	1    4000 1600
+F 0 "#PWR016" H 4000 1400 50  0001 C CNN
+F 1 "+5V" H 4015 1723 50  0000 C CNN
+F 2 "" H 4000 1550 50  0001 C CNN
+F 3 "" H 4000 1550 50  0001 C CNN
+	1    4000 1550
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 601BD6CB
-P 4000 3700
+P 3150 3850
 AR Path="/601BD6CB" Ref="#PWR?"  Part="1" 
 AR Path="/6019CF84/601BD6CB" Ref="#PWR017"  Part="1" 
-F 0 "#PWR017" H 4000 3450 50  0001 C CNN
-F 1 "GND" H 4005 3527 50  0000 C CNN
-F 2 "" H 4000 3700 50  0001 C CNN
-F 3 "" H 4000 3700 50  0001 C CNN
-	1    4000 3700
+F 0 "#PWR017" H 3150 3600 50  0001 C CNN
+F 1 "GND" H 3155 3677 50  0000 C CNN
+F 2 "" H 3150 3850 50  0001 C CNN
+F 3 "" H 3150 3850 50  0001 C CNN
+	1    3150 3850
 	1    0    0    -1  
 $EndComp
 Entry Wire Line
@@ -1021,16 +982,48 @@ Wire Wire Line
 	8350 3100 8350 3300
 Wire Wire Line
 	8350 3300 8250 3300
-Wire Bus Line
-	10250 1050 10250 2400
-Wire Bus Line
-	3150 1050 3150 2400
+Text Notes 7600 7100 0    39   ~ 0
+Copyright © Jaap Geurts 2021\n\nThis documentation describes Open Hardware and is licensed under the CERN OHL v. 1.1.\nYou may redistribute and modify this documentation under the terms of the CERN OHL v.1.1.\n(http://ohwr.org/cernohl). This documentation is distributed WITHOUT ANY EXPRESS OR IMPLIED\nWARRANTY, INCLUDING OF MERCHANTABILITY, SATISFACTORY QUALITY AND FITNESS FOR A PARTICULAR PURPOSE. \n\nPlease see the CERN OHL v.1.1 for applicable conditions\n
+Wire Wire Line
+	2450 1550 2450 1600
+Wire Wire Line
+	4000 1550 4000 1600
+Wire Wire Line
+	6300 1500 6300 1550
+Wire Wire Line
+	7800 1500 7800 1550
+Wire Wire Line
+	9350 1550 9350 1600
+Wire Wire Line
+	2450 3700 2450 3850
+Wire Wire Line
+	2450 3850 3150 3850
+Wire Wire Line
+	4000 3700 4000 3850
+Wire Wire Line
+	4000 3850 3150 3850
+Connection ~ 3150 3850
+Wire Wire Line
+	9350 3400 9350 3850
+Wire Wire Line
+	9350 3850 7800 3850
+Wire Wire Line
+	7800 3850 7800 3650
+Connection ~ 7800 3850
+Wire Wire Line
+	7800 3850 6300 3850
+Wire Wire Line
+	6300 3650 6300 3850
 Wire Bus Line
 	4700 1050 4700 2400
+Wire Bus Line
+	3150 1050 3150 2400
 Wire Bus Line
 	6950 1050 6950 2400
 Wire Bus Line
 	8500 1050 8500 2400
+Wire Bus Line
+	10250 1050 10250 2400
 Wire Bus Line
 	7100 1200 7100 2900
 Wire Bus Line
@@ -1041,6 +1034,4 @@ Wire Bus Line
 	1750 1200 1750 2900
 Wire Bus Line
 	8600 1200 8600 3100
-Text Notes 7600 7100 0    39   ~ 0
-Copyright © Jaap Geurts 2021\n\nThis documentation describes Open Hardware and is licensed under the CERN OHL v. 1.1.\nYou may redistribute and modify this documentation under the terms of the CERN OHL v.1.1.\n(http://ohwr.org/cernohl). This documentation is distributed WITHOUT ANY EXPRESS OR IMPLIED\nWARRANTY, INCLUDING OF MERCHANTABILITY, SATISFACTORY QUALITY AND FITNESS FOR A PARTICULAR PURPOSE. \n\nPlease see the CERN OHL v.1.1 for applicable conditions\n
 $EndSCHEMATC
