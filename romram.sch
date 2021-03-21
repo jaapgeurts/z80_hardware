@@ -1014,26 +1014,6 @@ F 3 "~" H 7250 6800 50  0001 C CNN
 	1    7250 6800
 	1    0    0    -1  
 $EndComp
-Wire Bus Line
-	4700 1050 4700 2400
-Wire Bus Line
-	3150 1050 3150 2400
-Wire Bus Line
-	6950 1050 6950 2400
-Wire Bus Line
-	8500 1050 8500 2400
-Wire Bus Line
-	10250 1050 10250 2400
-Wire Bus Line
-	7100 1200 7100 2900
-Wire Bus Line
-	5550 1200 5550 2900
-Wire Bus Line
-	3300 1200 3300 2900
-Wire Bus Line
-	1750 1200 1750 2900
-Wire Bus Line
-	8600 1200 8600 3100
 $Comp
 L Mechanical:MountingHole H6
 U 1 1 6109DE39
@@ -1056,4 +1036,24 @@ F 3 "~" H 2250 6400 50  0001 C CNN
 	1    2250 6400
 	1    0    0    -1  
 $EndComp
+Wire Bus Line
+	4700 1050 4700 2400
+Wire Bus Line
+	3150 1050 3150 2400
+Wire Bus Line
+	6950 1050 6950 2400
+Wire Bus Line
+	8500 1050 8500 2400
+Wire Bus Line
+	10250 1050 10250 2400
+Wire Bus Line
+	7100 1200 7100 2900
+Wire Bus Line
+	5550 1200 5550 2900
+Wire Bus Line
+	3300 1200 3300 2900
+Wire Bus Line
+	1750 1200 1750 2900
+Wire Bus Line
+	8600 1200 8600 3100
 $EndSCHEMATC

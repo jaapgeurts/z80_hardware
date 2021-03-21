@@ -329,7 +329,7 @@ L Connector:Mini-DIN-6 J5
 U 1 1 60ABB0AF
 P 10600 2800
 F 0 "J5" H 10600 3167 50  0000 C CNN
-F 1 "Mini-DIN-6" H 10600 3076 50  0000 C CNN
+F 1 "PS/2 Keyboard" H 10600 3076 50  0000 C CNN
 F 2 "Personal:Mini_din6" H 10600 2800 50  0001 C CNN
 F 3 "http://service.powerdynamics.com/ec/Catalog17/Section%2011.pdf" H 10600 2800 50  0001 C CNN
 	1    10600 2800
@@ -772,17 +772,6 @@ Wire Wire Line
 	1700 4150 3900 4150
 Wire Wire Line
 	1500 3150 2100 3150
-$Comp
-L Connector:Conn_01x07_Male J6
-U 1 1 60B7F4D8
-P 7900 1650
-F 0 "J6" H 7872 1674 50  0000 R CNN
-F 1 "RS232 (TTL Level)" H 8250 2050 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x07_P2.54mm_Vertical" H 7900 1650 50  0001 C CNN
-F 3 "~" H 7900 1650 50  0001 C CNN
-	1    7900 1650
-	-1   0    0    -1  
-$EndComp
 Wire Wire Line
 	6250 1700 7250 1700
 Wire Wire Line
@@ -1393,6 +1382,17 @@ Wire Wire Line
 Connection ~ 9750 5050
 Wire Wire Line
 	9750 5050 10100 5050
+$Comp
+L power:GND #PWR0135
+U 1 1 60E1E285
+P 8000 6000
+F 0 "#PWR0135" H 8000 5750 50  0001 C CNN
+F 1 "GND" H 8005 5827 50  0000 C CNN
+F 2 "" H 8000 6000 50  0001 C CNN
+F 3 "" H 8000 6000 50  0001 C CNN
+	1    8000 6000
+	1    0    0    -1  
+$EndComp
 Wire Bus Line
 	2200 7050 2200 7250
 Wire Bus Line
@@ -1409,15 +1409,29 @@ Wire Bus Line
 	4850 1050 4850 2300
 Wire Bus Line
 	1800 1050 1800 2250
+Text Label 7550 1350 0    50   ~ 0
+RXD
+Text Label 6450 1800 0    50   ~ 0
+RxTxCA
+Text Label 7550 1450 0    50   ~ 0
+TXD
+Text Label 7550 1550 0    50   ~ 0
+~RTS
+Text Label 7550 1650 0    50   ~ 0
+~CTS
+Text Label 7550 1750 0    50   ~ 0
+~DTR
+Text Label 7550 1850 0    50   ~ 0
+~DCD
 $Comp
-L power:GND #PWR0135
-U 1 1 60E1E285
-P 8000 6000
-F 0 "#PWR0135" H 8000 5750 50  0001 C CNN
-F 1 "GND" H 8005 5827 50  0000 C CNN
-F 2 "" H 8000 6000 50  0001 C CNN
-F 3 "" H 8000 6000 50  0001 C CNN
-	1    8000 6000
-	1    0    0    -1  
+L Connector:Conn_01x07_Male J6
+U 1 1 60B7F4D8
+P 7900 1650
+F 0 "J6" H 7872 1674 50  0000 R CNN
+F 1 "RS232" H 7950 2050 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x07_P2.54mm_Vertical" H 7900 1650 50  0001 C CNN
+F 3 "~" H 7900 1650 50  0001 C CNN
+	1    7900 1650
+	-1   0    0    -1  
 $EndComp
 $EndSCHEMATC
