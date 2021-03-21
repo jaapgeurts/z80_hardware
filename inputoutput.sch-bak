@@ -330,7 +330,7 @@ U 1 1 60ABB0AF
 P 10600 2800
 F 0 "J5" H 10600 3167 50  0000 C CNN
 F 1 "Mini-DIN-6" H 10600 3076 50  0000 C CNN
-F 2 "" H 10600 2800 50  0001 C CNN
+F 2 "Personal:Mini_din6" H 10600 2800 50  0001 C CNN
 F 3 "http://service.powerdynamics.com/ec/Catalog17/Section%2011.pdf" H 10600 2800 50  0001 C CNN
 	1    10600 2800
 	-1   0    0    1   
@@ -1057,7 +1057,7 @@ U 1 1 60587553
 P 8000 5400
 F 0 "J7" V 8004 6479 50  0000 L CNN
 F 1 "CompactFlash Port" V 8095 6479 50  0000 L CNN
-F 2 "Connector_PinHeader_2.00mm:PinHeader_2x22_P2.00mm_Vertical" H 8000 5400 50  0001 C CNN
+F 2 "Personal:CompactFlash_Module" H 8000 5400 50  0001 C CNN
 F 3 "~" H 8000 5400 50  0001 C CNN
 	1    8000 5400
 	0    -1   1    0   
@@ -1409,4 +1409,15 @@ Wire Bus Line
 	4850 1050 4850 2300
 Wire Bus Line
 	1800 1050 1800 2250
+$Comp
+L power:GND #PWR0135
+U 1 1 60E1E285
+P 8000 6000
+F 0 "#PWR0135" H 8000 5750 50  0001 C CNN
+F 1 "GND" H 8005 5827 50  0000 C CNN
+F 2 "" H 8000 6000 50  0001 C CNN
+F 3 "" H 8000 6000 50  0001 C CNN
+	1    8000 6000
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

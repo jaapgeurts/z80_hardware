@@ -191,11 +191,11 @@ L Device:C C24
 U 1 1 603862D4
 P 7650 1250
 F 0 "C24" V 7398 1250 50  0000 C CNN
-F 1 "2u" V 7489 1250 50  0000 C CNN
+F 1 "2n2" V 7489 1250 50  0000 C CNN
 F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm" H 7688 1100 50  0001 C CNN
 F 3 "~" H 7650 1250 50  0001 C CNN
 	1    7650 1250
-	0    1    1    0   
+	0    -1   -1   0   
 $EndComp
 Wire Wire Line
 	6950 1250 7200 1250
@@ -267,8 +267,6 @@ F 3 "" H 2450 5300 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2850 5300 3000 5300
-Wire Wire Line
-	3000 5300 3000 5550
 Wire Wire Line
 	2850 5550 3000 5550
 Connection ~ 3000 5550
@@ -423,7 +421,6 @@ Real Time Clock
 Wire Wire Line
 	3300 1500 3300 1250
 Connection ~ 3300 1500
-Connection ~ 7500 1250
 Text Notes 5400 800  0    50   ~ 0
 Audio Amplifier
 Text Notes 850  800  0    50   ~ 0
@@ -557,7 +554,7 @@ U 1 1 604938C5
 P 9250 1350
 F 0 "U23" H 9450 1250 50  0000 L CNN
 F 1 "LM386" H 9350 1500 50  0000 L CNN
-F 2 "Package_DIP:DIP-8-16_W7.62mm_Socket_LongPads" H 9350 1450 50  0001 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm_Socket_LongPads" H 9350 1450 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/lm386.pdf" H 9450 1550 50  0001 C CNN
 	1    9250 1350
 	1    0    0    -1  
@@ -606,12 +603,12 @@ Wire Notes Line
 $Comp
 L personal:OPEN-SMART-3.5"-LCD U24
 U 1 1 6052728B
-P 9600 3850
-F 0 "U24" H 9250 4350 50  0000 C CNN
-F 1 "OPEN-SMART-3.5\"-LCD" H 10100 4350 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x16_P2.54mm_Vertical" H 9600 3450 50  0001 C CNN
-F 3 "" H 9600 3450 50  0001 C CNN
-	1    9600 3850
+P 9650 3850
+F 0 "U24" H 9300 4350 50  0000 C CNN
+F 1 "OPEN-SMART-3.5\"-LCD" H 10150 4350 50  0000 C CNN
+F 2 "Personal:OPENSMART-3.5in-LCD" H 9650 3450 50  0001 C CNN
+F 3 "" H 9650 3450 50  0001 C CNN
+	1    9650 3850
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -636,22 +633,6 @@ F 3 "http://www.ti.com/lit/gpn/sn74HC245" H 7300 5650 50  0001 C CNN
 	1    7300 5650
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	8600 3500 9050 3500
-Wire Wire Line
-	8600 3600 9050 3600
-Wire Wire Line
-	8600 3700 9050 3700
-Wire Wire Line
-	8600 3800 9050 3800
-Wire Wire Line
-	8600 3900 9050 3900
-Wire Wire Line
-	8600 4000 9050 4000
-Wire Wire Line
-	8600 4100 9050 4100
-Wire Wire Line
-	8600 4200 9050 4200
 Wire Bus Line
 	7050 3350 7300 3350
 Text GLabel 7050 3350 0    50   Input ~ 0
@@ -688,21 +669,21 @@ Wire Wire Line
 	7400 4100 7600 4100
 Wire Wire Line
 	7400 4200 7600 4200
-Text Label 7500 3500 0    50   ~ 0
-D0
-Text Label 7500 3600 0    50   ~ 0
-D1
-Text Label 7500 3700 0    50   ~ 0
-D2
-Text Label 7500 3800 0    50   ~ 0
-D3
-Text Label 7500 3900 0    50   ~ 0
-D4
-Text Label 7500 4000 0    50   ~ 0
-D5
-Text Label 7500 4100 0    50   ~ 0
-D6
 Text Label 7500 4200 0    50   ~ 0
+D0
+Text Label 7500 4100 0    50   ~ 0
+D1
+Text Label 7500 4000 0    50   ~ 0
+D2
+Text Label 7500 3900 0    50   ~ 0
+D3
+Text Label 7500 3800 0    50   ~ 0
+D4
+Text Label 7500 3700 0    50   ~ 0
+D5
+Text Label 7500 3600 0    50   ~ 0
+D6
+Text Label 7500 3500 0    50   ~ 0
 D7
 $Comp
 L power:GND #PWR0119
@@ -732,12 +713,12 @@ $EndComp
 $Comp
 L power:GND #PWR0121
 U 1 1 6061C17D
-P 9600 4550
-F 0 "#PWR0121" H 9600 4300 50  0001 C CNN
-F 1 "GND" H 9605 4377 50  0000 C CNN
-F 2 "" H 9600 4550 50  0001 C CNN
-F 3 "" H 9600 4550 50  0001 C CNN
-	1    9600 4550
+P 9650 4550
+F 0 "#PWR0121" H 9650 4300 50  0001 C CNN
+F 1 "GND" H 9655 4377 50  0000 C CNN
+F 2 "" H 9650 4550 50  0001 C CNN
+F 3 "" H 9650 4550 50  0001 C CNN
+	1    9650 4550
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -758,7 +739,7 @@ Wire Wire Line
 Wire Wire Line
 	8750 3200 9600 3200
 Wire Wire Line
-	9600 3200 9600 3300
+	9600 3200 9650 3300
 Connection ~ 8750 3200
 $Comp
 L power:+3V3 #PWR0123
@@ -787,83 +768,25 @@ Wire Wire Line
 Wire Wire Line
 	6350 6050 6350 5950
 Wire Wire Line
-	9600 4400 9600 4500
+	9650 4400 9650 4500
+Connection ~ 9650 4500
 Wire Wire Line
-	9600 4500 10200 4500
-Wire Wire Line
-	10200 4500 10200 4000
-Wire Wire Line
-	10200 4000 10100 4000
-Connection ~ 9600 4500
-Wire Wire Line
-	9600 4500 9600 4550
-Wire Wire Line
-	10100 3900 10350 3900
-Wire Wire Line
-	10350 3900 10350 5150
+	9650 4500 9650 4550
 Wire Wire Line
 	10350 5150 7800 5150
 Wire Wire Line
 	7800 5250 10450 5250
 Wire Wire Line
-	10450 5250 10450 3800
-Wire Wire Line
-	10450 3800 10100 3800
-Wire Wire Line
-	10100 3700 10550 3700
-Wire Wire Line
 	10550 3700 10550 5350
 Wire Wire Line
 	10550 5350 7800 5350
-Wire Wire Line
-	10100 3600 10650 3600
-Wire Wire Line
-	10650 3600 10650 5450
-Wire Wire Line
-	10650 5450 7800 5450
-Wire Wire Line
-	10100 3500 10750 3500
-Wire Wire Line
-	10750 3500 10750 5550
 NoConn ~ 7800 5650
 NoConn ~ 7800 5750
 NoConn ~ 7800 5850
-Text GLabel 5900 5550 0    50   Input ~ 0
-~TFTS
-Wire Wire Line
-	5900 5550 6000 5550
 Wire Wire Line
 	7800 5550 10750 5550
 Wire Wire Line
-	6000 4500 6000 5550
-Wire Wire Line
 	6000 4500 7600 4500
-Connection ~ 6000 5550
-Wire Wire Line
-	6000 5550 6800 5550
-Text GLabel 6350 5150 0    50   Input ~ 0
-~RESET
-Wire Wire Line
-	6650 5450 6800 5450
-Text GLabel 6550 5250 0    50   Input ~ 0
-~RD
-Wire Wire Line
-	6350 5150 6800 5150
-Wire Wire Line
-	6550 5250 6700 5250
-Text GLabel 6350 5350 0    50   Input ~ 0
-~WR
-Wire Wire Line
-	6350 5350 6800 5350
-Text Label 6650 5450 0    50   ~ 0
-A0
-Wire Wire Line
-	6700 5250 6700 4400
-Wire Wire Line
-	6700 4400 7600 4400
-Connection ~ 6700 5250
-Wire Wire Line
-	6700 5250 6800 5250
 Wire Notes Line
 	6150 2800 6150 4200
 Wire Notes Line
@@ -1356,55 +1279,204 @@ Wire Wire Line
 Wire Wire Line
 	6600 5650 6600 5750
 Connection ~ 6600 5750
-$Comp
-L Connector:AudioJack2_Ground_Switch J9
-U 1 1 606E3024
-P 6400 1750
-F 0 "J9" H 6220 1676 50  0000 R CNN
-F 1 "Audio Out" H 6220 1767 50  0000 R CNN
-F 2 "Connector_Audio:Jack_3.5mm_Ledino_KB3SPRS_Horizontal" H 6400 1950 50  0001 C CNN
-F 3 "~" H 6400 1950 50  0001 C CNN
-	1    6400 1750
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
 	6100 1250 6650 1250
 Wire Wire Line
-	6200 1750 6000 1750
+	6850 2050 7200 2050
+$Comp
+L Connector:AudioJack3_Ground_Switch J9
+U 1 1 607D6A8E
+P 6350 1950
+F 0 "J9" H 6070 1776 50  0000 R CNN
+F 1 "AudioJack3_Ground_Switch" H 6070 1867 50  0000 R CNN
+F 2 "Connector_Audio:Jack_3.5mm_Ledino_KB3SPRS_Horizontal" H 6350 1950 50  0001 C CNN
+F 3 "~" H 6350 1950 50  0001 C CNN
+	1    6350 1950
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6150 1750 6000 1750
 Wire Wire Line
 	6000 1750 6000 1250
 Wire Wire Line
-	6200 1650 6100 1650
+	6150 1650 6100 1650
 Wire Wire Line
 	6100 1650 6100 1250
 Wire Wire Line
-	6200 1950 6200 2050
+	6050 2150 6150 2150
 Wire Wire Line
-	6200 2050 6850 2050
+	6050 2150 6050 2300
 Wire Wire Line
-	6200 1850 6050 1850
+	6050 2300 6850 2300
 Wire Wire Line
-	6050 1850 6050 2050
+	6850 2300 6850 2050
+NoConn ~ 6150 1850
+NoConn ~ 6150 1950
+NoConn ~ 6350 1450
+NoConn ~ 6150 2050
+Connection ~ 7500 1250
+Text Notes 7400 1100 0    50   ~ 0
+ceramic first\nelse electrolytic
+$Comp
+L Device:C C?
+U 1 1 609A93FD
+P 3400 5450
+AR Path="/609A93FD" Ref="C?"  Part="1" 
+AR Path="/601FFB8A/609A93FD" Ref="C34"  Part="1" 
+F 0 "C34" H 3515 5496 50  0000 L CNN
+F 1 "100n" H 3515 5405 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm" H 3438 5300 50  0001 C CNN
+F 3 "~" H 3400 5450 50  0001 C CNN
+	1    3400 5450
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
-	6050 2050 6200 2050
-Connection ~ 6200 2050
+	3400 5300 3000 5300
+$Comp
+L power:GND #PWR014
+U 1 1 609C8B4D
+P 3750 5600
+F 0 "#PWR014" H 3750 5350 50  0001 C CNN
+F 1 "GND" H 3755 5427 50  0000 C CNN
+F 2 "" H 3750 5600 50  0001 C CNN
+F 3 "" H 3750 5600 50  0001 C CNN
+	1    3750 5600
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
-	6400 1450 6850 1450
+	3750 5600 3400 5600
 Wire Wire Line
-	6850 1450 6850 2050
+	3000 5300 3000 5550
+Wire Wire Line
+	8600 3500 8850 3500
+Wire Wire Line
+	8850 3500 8850 4200
+Wire Wire Line
+	8850 4200 9100 4200
+Wire Wire Line
+	8600 3600 8800 3600
+Wire Wire Line
+	8800 3600 8800 4100
+Wire Wire Line
+	8600 3700 8750 3700
+Wire Wire Line
+	8750 3700 8750 4000
+Wire Wire Line
+	8750 4000 9100 4000
+Wire Wire Line
+	8600 3800 8700 3800
+Wire Wire Line
+	8700 3800 8700 3900
+Wire Wire Line
+	8700 3900 9100 3900
+Wire Wire Line
+	8600 3900 8650 3900
+Wire Wire Line
+	8650 3900 8650 3950
+Wire Wire Line
+	8650 3950 9000 3950
+Wire Wire Line
+	9000 3950 9000 3800
+Wire Wire Line
+	9000 3800 9100 3800
+Wire Wire Line
+	8800 4100 9100 4100
+Wire Wire Line
+	8600 4000 8700 4000
+Wire Wire Line
+	8700 4000 8700 4150
+Wire Wire Line
+	8700 4150 8950 4150
+Wire Wire Line
+	8950 4150 8950 3700
+Wire Wire Line
+	8950 3700 9100 3700
+Wire Wire Line
+	8600 4100 8650 4100
+Wire Wire Line
+	8650 4100 8650 4300
+Wire Wire Line
+	8650 4300 8900 4300
+Wire Wire Line
+	8900 4300 8900 3600
+Wire Wire Line
+	8900 3600 9100 3600
+Wire Wire Line
+	6700 4400 7600 4400
+Wire Wire Line
+	6350 5350 6800 5350
+Text GLabel 6350 5350 0    50   Input ~ 0
+~WR
+Text Label 6650 5450 0    50   ~ 0
+A0
+Wire Wire Line
+	6650 5450 6800 5450
+Wire Wire Line
+	10650 5450 7800 5450
+Wire Wire Line
+	6700 5250 6800 5250
+Connection ~ 6700 5250
+Wire Wire Line
+	6700 5250 6700 4400
+Wire Wire Line
+	6550 5250 6700 5250
+Text GLabel 6550 5250 0    50   Input ~ 0
+~RD
+Wire Wire Line
+	6000 5550 6800 5550
+Connection ~ 6000 5550
+Wire Wire Line
+	6000 4500 6000 5550
+Wire Wire Line
+	5900 5550 6000 5550
+Text GLabel 5900 5550 0    50   Input ~ 0
+~TFTS
+Wire Wire Line
+	6350 5150 6800 5150
+Text GLabel 6350 5150 0    50   Input ~ 0
+~RESET
+Wire Wire Line
+	10750 3500 10750 5550
+Wire Wire Line
+	10650 3600 10650 5450
+Wire Wire Line
+	10450 5250 10450 3800
+Wire Wire Line
+	10350 3900 10350 5150
+Wire Wire Line
+	9650 4500 10200 4500
+Wire Wire Line
+	10200 4500 10200 4000
+Wire Wire Line
+	10200 4000 10150 4000
+Wire Wire Line
+	9100 3500 9050 3500
+Wire Wire Line
+	9050 3500 9050 4400
+Wire Wire Line
+	9050 4400 8600 4400
+Wire Wire Line
+	8600 4400 8600 4200
+Wire Bus Line
+	4500 3550 4500 4550
+Wire Bus Line
+	3250 2400 3250 4550
+Wire Bus Line
+	7300 3350 7300 4100
 Wire Bus Line
 	2250 6000 2250 6400
 Wire Bus Line
 	3700 5900 3700 6400
 Wire Bus Line
-	3250 2400 3250 4550
-Wire Bus Line
-	4500 3550 4500 4550
-Wire Bus Line
-	7300 3350 7300 4100
-Wire Bus Line
 	1550 2850 1550 3600
-Connection ~ 6850 2050
 Wire Wire Line
-	6850 2050 7200 2050
+	10150 3500 10750 3500
+Wire Wire Line
+	10150 3600 10650 3600
+Wire Wire Line
+	10150 3700 10550 3700
+Wire Wire Line
+	10450 3800 10150 3800
+Wire Wire Line
+	10150 3900 10350 3900
 $EndSCHEMATC

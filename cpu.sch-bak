@@ -469,215 +469,12 @@ Text GLabel 9100 4300 2    50   Output ~ 0
 ~TFTS
 Wire Wire Line
 	8750 4300 9100 4300
-$Comp
-L Connector_Generic:Conn_02x20_Odd_Even J11
-U 1 1 608F92BA
-P 2700 6350
-F 0 "J11" H 2750 7467 50  0000 C CNN
-F 1 "Expansion Bus" H 2750 7376 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_2x20_P2.54mm_Vertical" H 2700 6350 50  0001 C CNN
-F 3 "~" H 2700 6350 50  0001 C CNN
-	1    2700 6350
-	1    0    0    -1  
-$EndComp
 Text GLabel 4450 1400 2    50   Output ~ 0
 A[0..14]
-Wire Bus Line
-	1800 5250 2100 5250
-Text GLabel 1800 5250 0    50   Input ~ 0
-A[0..14]
-Entry Wire Line
-	2100 5450 2200 5550
-Entry Wire Line
-	2100 5550 2200 5650
-Entry Wire Line
-	2100 5650 2200 5750
-Entry Wire Line
-	2100 5750 2200 5850
-Entry Wire Line
-	2100 5850 2200 5950
-Entry Wire Line
-	2100 5950 2200 6050
-Entry Wire Line
-	2100 6050 2200 6150
-Entry Wire Line
-	2100 6150 2200 6250
-Entry Wire Line
-	2100 6250 2200 6350
-Entry Wire Line
-	2100 6350 2200 6450
-Entry Wire Line
-	2100 6450 2200 6550
-Entry Wire Line
-	2100 6550 2200 6650
-Entry Wire Line
-	2100 6650 2200 6750
-Entry Wire Line
-	2100 6750 2200 6850
-Entry Wire Line
-	2100 6850 2200 6950
-Wire Wire Line
-	2200 5550 2500 5550
-Wire Wire Line
-	2200 5650 2500 5650
-Wire Wire Line
-	2200 5750 2500 5750
-Wire Wire Line
-	2200 5850 2500 5850
-Wire Wire Line
-	2200 5950 2500 5950
-Wire Wire Line
-	2200 6050 2500 6050
-Wire Wire Line
-	2200 6150 2500 6150
-Wire Wire Line
-	2200 6250 2500 6250
-Wire Wire Line
-	2200 6350 2500 6350
-Wire Wire Line
-	2200 6450 2500 6450
-Wire Wire Line
-	2200 6550 2500 6550
-Wire Wire Line
-	2200 6650 2500 6650
-Wire Wire Line
-	2200 6750 2500 6750
-Wire Wire Line
-	2200 6850 2500 6850
-Wire Wire Line
-	2200 6950 2500 6950
-Text Label 2300 5550 0    50   ~ 0
-A0
-Text Label 2300 5650 0    50   ~ 0
-A1
-Text Label 2300 5750 0    50   ~ 0
-A2
-Text Label 2300 5850 0    50   ~ 0
-A3
-Text Label 2300 5950 0    50   ~ 0
-A4
-Text Label 2300 6050 0    50   ~ 0
-A5
-Text Label 2300 6150 0    50   ~ 0
-A6
-Text Label 2300 6250 0    50   ~ 0
-A7
-Text Label 2300 6350 0    50   ~ 0
-A8
-Text Label 2300 6450 0    50   ~ 0
-A9
-Text Label 2300 6550 0    50   ~ 0
-A10
-Text Label 2300 6650 0    50   ~ 0
-A11
-Text Label 2300 6750 0    50   ~ 0
-A12
-Text Label 2300 6850 0    50   ~ 0
-A13
-Text Label 2300 6950 0    50   ~ 0
-A14
-Text Label 2300 7050 0    50   ~ 0
-A15
-Entry Wire Line
-	2100 6950 2200 7050
-Wire Wire Line
-	2200 7050 2500 7050
-Text GLabel 3550 5250 2    50   BiDi ~ 0
-D[0..7]
-Wire Bus Line
-	3550 5250 3450 5250
-Entry Wire Line
-	3350 5550 3450 5450
-Entry Wire Line
-	3350 5650 3450 5550
-Entry Wire Line
-	3350 5750 3450 5650
-Entry Wire Line
-	3350 5850 3450 5750
-Entry Wire Line
-	3350 5950 3450 5850
-Entry Wire Line
-	3350 6050 3450 5950
-Entry Wire Line
-	3350 6150 3450 6050
-Entry Wire Line
-	3350 6250 3450 6150
-Wire Wire Line
-	3000 5550 3350 5550
-Wire Wire Line
-	3000 5650 3350 5650
-Wire Wire Line
-	3000 5750 3350 5750
-Wire Wire Line
-	3000 5850 3350 5850
-Wire Wire Line
-	3000 5950 3350 5950
-Wire Wire Line
-	3000 6050 3350 6050
-Wire Wire Line
-	3000 6150 3350 6150
-Wire Wire Line
-	3000 6250 3350 6250
-Text Label 3100 5550 0    50   ~ 0
-D0
-Text Label 3100 5650 0    50   ~ 0
-D1
-Text Label 3100 5750 0    50   ~ 0
-D2
-Text Label 3100 5850 0    50   ~ 0
-D3
-Text Label 3100 5950 0    50   ~ 0
-D4
-Text Label 3100 6050 0    50   ~ 0
-D5
-Text Label 3100 6150 0    50   ~ 0
-D6
-Text Label 3100 6250 0    50   ~ 0
-D7
-Text GLabel 3150 6350 2    50   Input ~ 0
-~RD
-Text GLabel 3400 6450 2    50   Input ~ 0
-~WR
-Text GLabel 3150 6550 2    50   Input ~ 0
-~IORQ
-Wire Wire Line
-	3400 6450 3000 6450
-Text GLabel 3150 6750 2    50   Input ~ 0
-~M1
-Wire Wire Line
-	3150 6350 3000 6350
-Wire Wire Line
-	3000 6550 3150 6550
-Wire Wire Line
-	3150 6750 3000 6750
-Text GLabel 3400 6650 2    50   Input ~ 0
-~MREQ
-Wire Wire Line
-	3400 6650 3000 6650
-Text GLabel 3150 6950 2    50   Output ~ 0
-~NMI
-Text GLabel 3400 6850 2    50   Output ~ 0
-~INT
-Wire Wire Line
-	3400 6850 3000 6850
-Wire Wire Line
-	3150 6950 3000 6950
-Wire Wire Line
-	3400 7050 3000 7050
-Text GLabel 3400 7050 2    50   BiDi ~ 0
-~RESET
-Text GLabel 3150 7150 2    50   Input ~ 0
-CLK
-Wire Wire Line
-	3150 7150 3000 7150
 Text GLabel 2150 2750 0    50   Output ~ 0
 ~RFSH
 Wire Wire Line
 	2450 2750 2150 2750
-Text GLabel 2450 7150 0    50   Input ~ 0
-~RFSH
-Wire Wire Line
-	2450 7150 2500 7150
 $Comp
 L Device:R R?
 U 1 1 60A55014
@@ -776,55 +573,6 @@ Text GLabel 2200 2950 0    50   Output ~ 0
 ~HALT
 Wire Wire Line
 	2200 2950 2450 2950
-Text GLabel 3500 7250 2    50   Input ~ 0
-~HALT
-Wire Wire Line
-	3500 7250 3000 7250
-Text GLabel 2050 7250 0    50   Input ~ 0
-~WAIT
-Wire Wire Line
-	2050 7250 2500 7250
-Text GLabel 2400 7350 0    50   Output ~ 0
-~BUSRQ
-Wire Wire Line
-	2400 7350 2500 7350
-Text GLabel 3150 7350 2    50   Input ~ 0
-~BUSACK
-Wire Wire Line
-	3150 7350 3000 7350
-$Comp
-L power:GND #PWR?
-U 1 1 60B4795F
-P 3300 5050
-AR Path="/60B4795F" Ref="#PWR?"  Part="1" 
-AR Path="/608D2E51/60B4795F" Ref="#PWR0128"  Part="1" 
-F 0 "#PWR0128" H 3300 4800 50  0001 C CNN
-F 1 "GND" H 3305 4877 50  0000 C CNN
-F 2 "" H 3300 5050 50  0001 C CNN
-F 3 "" H 3300 5050 50  0001 C CNN
-	1    3300 5050
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3300 5050 3300 5000
-$Comp
-L power:+5V #PWR?
-U 1 1 60B50140
-P 2350 5150
-AR Path="/60B50140" Ref="#PWR?"  Part="1" 
-AR Path="/6019CF84/60B50140" Ref="#PWR?"  Part="1" 
-AR Path="/608D2E51/60B50140" Ref="#PWR0129"  Part="1" 
-F 0 "#PWR0129" H 2350 5000 50  0001 C CNN
-F 1 "+5V" H 2365 5323 50  0000 C CNN
-F 2 "" H 2350 5150 50  0001 C CNN
-F 3 "" H 2350 5150 50  0001 C CNN
-	1    2350 5150
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2500 5450 2350 5450
-Wire Wire Line
-	2350 5450 2350 5150
 $Comp
 L Logic_Programmable:GAL16V8 U?
 U 1 1 608F837A
@@ -871,16 +619,6 @@ $EndComp
 Text Notes 7600 7100 0    39   ~ 0
 Copyright © Jaap Geurts 2021\n\nThis documentation describes Open Hardware and is licensed under the CERN OHL v. 1.1.\nYou may redistribute and modify this documentation under the terms of the CERN OHL v.1.1.\n(http://ohwr.org/cernohl). This documentation is distributed WITHOUT ANY EXPRESS OR IMPLIED\nWARRANTY, INCLUDING OF MERCHANTABILITY, SATISFACTORY QUALITY AND FITNESS FOR A PARTICULAR PURPOSE. \n\nPlease see the CERN OHL v.1.1 for applicable conditions\n
 Wire Notes Line
-	4400 4750 4400 7650
-Wire Notes Line
-	4400 7650 1100 7650
-Wire Notes Line
-	1100 7650 1100 4750
-Wire Notes Line
-	1100 4750 4400 4750
-Text Notes 1200 4850 0    50   ~ 0
-Expansion bus
-Wire Notes Line
 	850  900  850  4650
 Wire Notes Line
 	850  4650 5500 4650
@@ -890,18 +628,8 @@ Wire Notes Line
 	5500 900  850  900 
 Text Notes 1000 1050 0    47   ~ 0
 CPU
-Wire Wire Line
-	3000 5450 3100 5450
-Wire Wire Line
-	3100 5450 3100 5000
-Wire Wire Line
-	3100 5000 3300 5000
-Wire Bus Line
-	3450 5250 3450 6150
 Wire Bus Line
 	4250 3200 4250 3950
 Wire Bus Line
 	4150 1400 4150 2950
-Wire Bus Line
-	2100 5250 2100 6950
 $EndSCHEMATC
