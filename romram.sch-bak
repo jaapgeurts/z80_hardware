@@ -1019,7 +1019,7 @@ L Mechanical:MountingHole H6
 U 1 1 6109DE39
 P 2300 5950
 F 0 "H6" H 2400 5996 50  0000 L CNN
-F 1 "PlaceHolder for Graphic" H 2400 5905 50  0000 L CNN
+F 1 "PlaceHolder for OS Hardware" H 2400 5905 50  0000 L CNN
 F 2 "Symbol:OSHW-Logo_19x20mm_SilkScreen" H 2300 5950 50  0001 C CNN
 F 3 "~" H 2300 5950 50  0001 C CNN
 	1    2300 5950
@@ -1030,7 +1030,7 @@ L Mechanical:MountingHole H5
 U 1 1 6109E0BA
 P 2250 6400
 F 0 "H5" H 2350 6446 50  0000 L CNN
-F 1 "PlaceHolder for Graphic" H 2350 6355 50  0000 L CNN
+F 1 "PlaceHolder Sea80" H 2350 6355 50  0000 L CNN
 F 2 "z80_computer:wave_logo" H 2250 6400 50  0001 C CNN
 F 3 "~" H 2250 6400 50  0001 C CNN
 	1    2250 6400
@@ -1056,4 +1056,15 @@ Wire Bus Line
 	1750 1200 1750 2900
 Wire Bus Line
 	8600 1200 8600 3100
+$Comp
+L Mechanical:MountingHole H?
+U 1 1 6059FCB2
+P 2250 6800
+F 0 "H?" H 2350 6846 50  0000 L CNN
+F 1 "MountingHole" H 2350 6755 50  0000 L CNN
+F 2 "" H 2250 6800 50  0001 C CNN
+F 3 "~" H 2250 6800 50  0001 C CNN
+	1    2250 6800
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

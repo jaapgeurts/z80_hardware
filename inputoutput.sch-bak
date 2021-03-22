@@ -1393,22 +1393,6 @@ F 3 "" H 8000 6000 50  0001 C CNN
 	1    8000 6000
 	1    0    0    -1  
 $EndComp
-Wire Bus Line
-	2200 7050 2200 7250
-Wire Bus Line
-	1300 2700 1300 3250
-Wire Bus Line
-	4800 3600 4800 4250
-Wire Bus Line
-	9150 4800 9400 4800
-Wire Bus Line
-	6700 4950 7700 4950
-Wire Bus Line
-	2150 5000 2150 5850
-Wire Bus Line
-	4850 1050 4850 2300
-Wire Bus Line
-	1800 1050 1800 2250
 Text Label 7550 1350 0    50   ~ 0
 RXD
 Text Label 6450 1800 0    50   ~ 0
@@ -1434,4 +1418,20 @@ F 3 "~" H 7900 1650 50  0001 C CNN
 	1    7900 1650
 	-1   0    0    -1  
 $EndComp
+Wire Bus Line
+	2200 7050 2200 7250
+Wire Bus Line
+	1300 2700 1300 3250
+Wire Bus Line
+	4800 3600 4800 4250
+Wire Bus Line
+	9150 4800 9400 4800
+Wire Bus Line
+	6700 4950 7700 4950
+Wire Bus Line
+	2150 5000 2150 5850
+Wire Bus Line
+	4850 1050 4850 2300
+Wire Bus Line
+	1800 1050 1800 2250
 $EndSCHEMATC
