@@ -198,8 +198,6 @@ Wire Wire Line
 Wire Wire Line
 	4700 2950 5150 2950
 Wire Wire Line
-	6250 1800 6950 1800
-Wire Wire Line
 	6250 2000 6950 2000
 Wire Wire Line
 	6950 2000 6950 1800
@@ -246,9 +244,7 @@ F 3 "" H 7650 2150 50  0001 C CNN
 	1    7650 2150
 	1    0    0    -1  
 $EndComp
-NoConn ~ 6250 2100
 NoConn ~ 6250 2200
-NoConn ~ 6250 3100
 NoConn ~ 6250 3200
 $Comp
 L power:+5V #PWR027
@@ -1418,20 +1414,72 @@ F 3 "~" H 7900 1650 50  0001 C CNN
 	1    7900 1650
 	-1   0    0    -1  
 $EndComp
-Wire Bus Line
-	2200 7050 2200 7250
-Wire Bus Line
-	1300 2700 1300 3250
-Wire Bus Line
-	4800 3600 4800 4250
+$Comp
+L Device:R R?
+U 1 1 605A697E
+P 6750 1450
+F 0 "R?" H 6820 1496 50  0000 L CNN
+F 1 "10k" H 6820 1405 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 6680 1450 50  0001 C CNN
+F 3 "~" H 6750 1450 50  0001 C CNN
+	1    6750 1450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5950 1300 5950 1450
+Wire Wire Line
+	5950 1450 5700 1450
+Connection ~ 5700 1450
+Wire Wire Line
+	6750 1600 6750 2350
+Wire Wire Line
+	6750 2350 6700 2350
+Wire Wire Line
+	6700 2350 6700 2850
+Wire Wire Line
+	6700 2850 6650 2850
+Wire Wire Line
+	6650 2850 6650 3100
+Wire Wire Line
+	6650 3100 6250 3100
+Wire Wire Line
+	6250 2050 6250 2100
+Wire Wire Line
+	6250 1800 6950 1800
+Wire Wire Line
+	6500 2050 6250 2050
 Wire Bus Line
 	9150 4800 9400 4800
 Wire Bus Line
 	6700 4950 7700 4950
 Wire Bus Line
+	2200 7050 2200 7250
+Wire Bus Line
 	2150 5000 2150 5850
+Wire Bus Line
+	1300 2700 1300 3250
+Wire Bus Line
+	4800 3600 4800 4250
 Wire Bus Line
 	4850 1050 4850 2300
 Wire Bus Line
 	1800 1050 1800 2250
+Wire Wire Line
+	6500 1600 6500 2050
+Wire Wire Line
+	6500 1300 6750 1300
+Connection ~ 6500 1300
+Wire Wire Line
+	6500 1300 5950 1300
+$Comp
+L Device:R R?
+U 1 1 605A7BCC
+P 6500 1450
+F 0 "R?" H 6570 1496 50  0000 L CNN
+F 1 "10k" H 6570 1405 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 6430 1450 50  0001 C CNN
+F 3 "~" H 6500 1450 50  0001 C CNN
+	1    6500 1450
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
