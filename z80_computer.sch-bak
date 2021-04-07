@@ -334,17 +334,6 @@ Connection ~ 1200 7150
 Wire Wire Line
 	2900 6100 2900 6450
 Connection ~ 2900 6450
-$Comp
-L 74xx:74HCT04 U1
-U 3 1 601E692D
-P 3350 6250
-F 0 "U1" H 3350 6567 50  0000 C CNN
-F 1 "74HCT04" H 3350 6476 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 3350 6250 50  0001 C CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 3350 6250 50  0001 C CNN
-	3    3350 6250
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	2750 6250 3050 6250
 Text GLabel 3850 6250 2    50   Output ~ 0
@@ -1609,6 +1598,17 @@ F 1 "Placeholder Graphic" H 950 1705 50  0000 L CNN
 F 2 "Symbol:Symbol_Barrel_Polarity" H 850 1750 50  0001 C CNN
 F 3 "~" H 850 1750 50  0001 C CNN
 	1    850  1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74HCT04 U1
+U 3 1 601E692D
+P 3350 6250
+F 0 "U1" H 3350 6567 50  0000 C CNN
+F 1 "74HCT04" H 3350 6476 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 3350 6250 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 3350 6250 50  0001 C CNN
+	3    3350 6250
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC

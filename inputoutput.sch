@@ -615,17 +615,6 @@ Wire Wire Line
 	8450 3100 8800 3100
 $Comp
 L 74xx:74LS04 U18
-U 6 1 606774FF
-P 10300 1950
-F 0 "U18" H 10300 2267 50  0000 C CNN
-F 1 "74LS04" H 10300 2176 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm_Socket_LongPads" H 10300 1950 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS04" H 10300 1950 50  0001 C CNN
-	6    10300 1950
-	1    0    0    -1  
-$EndComp
-$Comp
-L 74xx:74LS04 U18
 U 7 1 60677F4F
 P 9400 1700
 F 0 "U18" H 9630 1746 50  0000 L CNN
@@ -637,12 +626,6 @@ F 3 "http://www.ti.com/lit/gpn/sn74LS04" H 9400 1700 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	9400 2200 9400 2250
-Wire Wire Line
-	9400 2250 9850 2250
-Wire Wire Line
-	9850 2250 9850 1950
-Wire Wire Line
-	9850 1950 10000 1950
 $Comp
 L power:+5V #PWR0116
 U 1 1 60691D2D
@@ -1089,7 +1072,6 @@ Text Label 3800 7200 0    50   ~ 0
 ~PBSTB
 Text Notes 7650 7100 0    39   ~ 0
 Copyright © Jaap Geurts 2021\n\nThis documentation describes Open Hardware and is licensed under the CERN OHL v. 1.1.\nYou may redistribute and modify this documentation under the terms of the CERN OHL v.1.1.\n(http://ohwr.org/cernohl). This documentation is distributed WITHOUT ANY EXPRESS OR IMPLIED\nWARRANTY, INCLUDING OF MERCHANTABILITY, SATISFACTORY QUALITY AND FITNESS FOR A PARTICULAR PURPOSE. \n\nPlease see the CERN OHL v.1.1 for applicable conditions\n
-NoConn ~ 10600 1950
 $Comp
 L power:GND #PWR0131
 U 1 1 611698AC
@@ -1101,7 +1083,6 @@ F 3 "" H 9400 2250 50  0001 C CNN
 	1    9400 2250
 	1    0    0    -1  
 $EndComp
-Connection ~ 9400 2250
 Text GLabel 9150 4800 0    50   Input ~ 0
 A[0..2]
 Text GLabel 6700 4950 0    50   Input ~ 0
@@ -1448,22 +1429,6 @@ Wire Wire Line
 	6250 1800 6950 1800
 Wire Wire Line
 	6500 2050 6250 2050
-Wire Bus Line
-	9150 4800 9400 4800
-Wire Bus Line
-	6700 4950 7700 4950
-Wire Bus Line
-	2200 7050 2200 7250
-Wire Bus Line
-	2150 5000 2150 5850
-Wire Bus Line
-	1300 2700 1300 3250
-Wire Bus Line
-	4800 3600 4800 4250
-Wire Bus Line
-	4850 1050 4850 2300
-Wire Bus Line
-	1800 1050 1800 2250
 Wire Wire Line
 	6500 1600 6500 2050
 Wire Wire Line
@@ -1482,4 +1447,39 @@ F 3 "~" H 6500 1450 50  0001 C CNN
 	1    6500 1450
 	1    0    0    -1  
 $EndComp
+Wire Bus Line
+	9150 4800 9400 4800
+Wire Bus Line
+	6700 4950 7700 4950
+Wire Bus Line
+	2200 7050 2200 7250
+Wire Bus Line
+	2150 5000 2150 5850
+Wire Bus Line
+	1300 2700 1300 3250
+Wire Bus Line
+	4800 3600 4800 4250
+Wire Bus Line
+	4850 1050 4850 2300
+Wire Bus Line
+	1800 1050 1800 2250
+$Comp
+L 74xx:74LS04 U18
+U 6 1 606774FF
+P 10300 1950
+F 0 "U18" H 10300 2267 50  0000 C CNN
+F 1 "74LS04" H 10300 2176 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket_LongPads" H 10300 1950 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS04" H 10300 1950 50  0001 C CNN
+	6    10300 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9850 1950 10000 1950
+Wire Wire Line
+	9850 2250 9850 1950
+Connection ~ 9400 2250
+Wire Wire Line
+	9400 2250 9850 2250
+NoConn ~ 10600 1950
 $EndSCHEMATC
