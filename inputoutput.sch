@@ -769,15 +769,9 @@ Wire Wire Line
 Wire Wire Line
 	1500 3150 2100 3150
 Wire Wire Line
-	6250 1700 7250 1700
-Wire Wire Line
-	7250 1700 7250 1350
-Wire Wire Line
-	7250 1350 7700 1350
+	6250 1700 7200 1700
 Wire Wire Line
 	7300 1450 7700 1450
-Wire Wire Line
-	7300 1450 7300 1900
 Wire Wire Line
 	7700 1950 7650 1950
 Wire Wire Line
@@ -1448,22 +1442,6 @@ Wire Wire Line
 	6250 1800 6950 1800
 Wire Wire Line
 	6500 2050 6250 2050
-Wire Bus Line
-	9150 4800 9400 4800
-Wire Bus Line
-	6700 4950 7700 4950
-Wire Bus Line
-	2200 7050 2200 7250
-Wire Bus Line
-	2150 5000 2150 5850
-Wire Bus Line
-	1300 2700 1300 3250
-Wire Bus Line
-	4800 3600 4800 4250
-Wire Bus Line
-	4850 1050 4850 2300
-Wire Bus Line
-	1800 1050 1800 2250
 Wire Wire Line
 	6500 1600 6500 2050
 Wire Wire Line
@@ -1482,4 +1460,48 @@ F 3 "~" H 6500 1450 50  0001 C CNN
 	1    6500 1450
 	1    0    0    -1  
 $EndComp
+$Comp
+L Device:R R32
+U 1 1 6077BB71
+P 7200 1550
+F 0 "R32" H 7270 1596 50  0000 L CNN
+F 1 "2k7" H 7270 1505 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 7130 1550 50  0001 C CNN
+F 3 "~" H 7200 1550 50  0001 C CNN
+	1    7200 1550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7200 1400 7200 1350
+Wire Wire Line
+	7200 1350 7700 1350
+$Comp
+L Device:R R33
+U 1 1 60791876
+P 7300 1750
+F 0 "R33" H 7370 1796 50  0000 L CNN
+F 1 "2k7" H 7370 1705 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 7230 1750 50  0001 C CNN
+F 3 "~" H 7300 1750 50  0001 C CNN
+	1    7300 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7300 1600 7300 1450
+Wire Bus Line
+	2200 7050 2200 7250
+Wire Bus Line
+	1300 2700 1300 3250
+Wire Bus Line
+	4800 3600 4800 4250
+Wire Bus Line
+	9150 4800 9400 4800
+Wire Bus Line
+	6700 4950 7700 4950
+Wire Bus Line
+	2150 5000 2150 5850
+Wire Bus Line
+	4850 1050 4850 2300
+Wire Bus Line
+	1800 1050 1800 2250
 $EndSCHEMATC

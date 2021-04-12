@@ -258,9 +258,6 @@ Wire Wire Line
 	2450 2250 1900 2250
 Wire Wire Line
 	1900 1950 1900 1850
-Wire Wire Line
-	1900 2250 1900 2500
-Connection ~ 1900 2250
 $Comp
 L power:+5V #PWR?
 U 1 1 608F8345
@@ -462,7 +459,6 @@ Text GLabel 8850 4200 2    50   Output ~ 0
 ~PIOS
 Wire Wire Line
 	8750 4200 8850 4200
-Connection ~ 1600 2350
 Wire Wire Line
 	1600 2350 2450 2350
 Text GLabel 9100 4300 2    50   Output ~ 0
@@ -524,7 +520,7 @@ Wire Wire Line
 	1600 1950 1600 1850
 Wire Wire Line
 	1900 2500 1550 2500
-Text GLabel 1550 2500 0    50   Input ~ 0
+Text GLabel 1350 2350 0    50   Input ~ 0
 ~INT
 Wire Wire Line
 	1600 2250 1600 2350
@@ -543,10 +539,6 @@ F 3 "~" H 1600 2100 50  0001 C CNN
 	1    1600 2100
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1350 2350 1600 2350
-Text GLabel 1350 2350 0    50   Input ~ 0
-~NMI
 Text GLabel 1350 3150 0    50   Input ~ 0
 ~WAIT
 Wire Wire Line
@@ -628,6 +620,14 @@ Wire Notes Line
 	5500 900  850  900 
 Text Notes 1000 1050 0    47   ~ 0
 CPU
+Text GLabel 1550 2500 0    50   Input ~ 0
+~NMI
+Connection ~ 1600 2350
+Wire Wire Line
+	1350 2350 1600 2350
+Connection ~ 1900 2250
+Wire Wire Line
+	1900 2250 1900 2500
 Wire Bus Line
 	4250 3200 4250 3950
 Wire Bus Line
