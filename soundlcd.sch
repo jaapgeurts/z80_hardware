@@ -922,7 +922,7 @@ Wire Wire Line
 Wire Wire Line
 	4550 1700 4550 1950
 Wire Wire Line
-	4550 1700 4800 1700
+	4550 1700 4650 1700
 Wire Wire Line
 	4800 1700 4800 1950
 Connection ~ 4550 1700
@@ -947,7 +947,7 @@ Wire Wire Line
 	3300 1250 5700 1250
 Connection ~ 5700 1250
 Wire Wire Line
-	4200 3000 4900 3000
+	4200 3000 4650 3000
 Wire Notes Line
 	750  650  5250 650 
 Wire Notes Line
@@ -1467,6 +1467,22 @@ Wire Wire Line
 	10450 3800 10150 3800
 Wire Wire Line
 	10150 3900 10350 3900
+$Comp
+L Device:R R?
+U 1 1 6077F3CF
+P 4650 2850
+F 0 "R?" H 4720 2896 50  0000 L CNN
+F 1 "10k" H 4720 2805 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 4580 2850 50  0001 C CNN
+F 3 "~" H 4650 2850 50  0001 C CNN
+	1    4650 2850
+	1    0    0    -1  
+$EndComp
+Connection ~ 4650 3000
+Wire Wire Line
+	4650 3000 4900 3000
+Wire Wire Line
+	4650 2700 4650 1700
 Wire Bus Line
 	2250 6000 2250 6400
 Wire Bus Line
@@ -1479,4 +1495,7 @@ Wire Bus Line
 	7300 3350 7300 4100
 Wire Bus Line
 	1550 2850 1550 3600
+Connection ~ 4650 1700
+Wire Wire Line
+	4650 1700 4800 1700
 $EndSCHEMATC
