@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 5
+Sheet 1 6
 Title "Z80 Computer"
 Date "2021-02-02"
 Rev "2"
@@ -446,17 +446,6 @@ Wire Wire Line
 	4500 2200 3750 2200
 Connection ~ 3750 2200
 $Comp
-L Device:R R7
-U 1 1 6027A198
-P 5050 1650
-F 0 "R7" H 5120 1696 50  0000 L CNN
-F 1 "11k" H 5120 1605 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 4980 1650 50  0001 C CNN
-F 3 "~" H 5050 1650 50  0001 C CNN
-	1    5050 1650
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:R R8
 U 1 1 6027A741
 P 5050 2050
@@ -468,18 +457,11 @@ F 3 "~" H 5050 2050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5050 1800 5050 1850
-Wire Wire Line
-	5050 1850 4900 1850
-Wire Wire Line
 	4900 1850 4900 1300
 Wire Wire Line
 	4900 1300 3500 1300
-Connection ~ 5050 1850
 Wire Wire Line
 	5050 1850 5050 1900
-Wire Wire Line
-	5050 1500 4500 1500
 Connection ~ 4500 1500
 Wire Wire Line
 	5050 2200 4500 2200
@@ -518,8 +500,6 @@ F 3 "~" H 5500 2000 50  0001 C CNN
 	1    5500 2000
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	5050 1500 5200 1500
 Connection ~ 5500 1500
 $Comp
 L Device:R R9
@@ -1204,8 +1184,6 @@ F 3 "" H 3000 2200 50  0001 C CNN
 	1    3000 2200
 	1    0    0    -1  
 $EndComp
-Text GLabel 3200 2100 2    50   Input ~ 0
-~PWR
 Wire Notes Line
 	6800 750  9350 750 
 Wire Notes Line
@@ -1325,8 +1303,6 @@ Connection ~ 5500 2200
 Wire Wire Line
 	5400 1500 5500 1500
 Wire Wire Line
-	5500 1500 5700 1500
-Wire Wire Line
 	6000 1500 6000 1700
 Wire Wire Line
 	6000 1700 6000 2100
@@ -1348,17 +1324,14 @@ Wire Wire Line
 $Comp
 L Connector:TestPoint TP5
 U 1 1 60658538
-P 5700 1500
-F 0 "TP5" H 5758 1618 50  0000 L CNN
-F 1 "5v" H 5758 1527 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_D2.0mm" H 5900 1500 50  0001 C CNN
-F 3 "~" H 5900 1500 50  0001 C CNN
-	1    5700 1500
+P 5050 1150
+F 0 "TP5" H 5108 1268 50  0000 L CNN
+F 1 "5v" H 5108 1177 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D2.0mm" H 5250 1150 50  0001 C CNN
+F 3 "~" H 5250 1150 50  0001 C CNN
+	1    5050 1150
 	1    0    0    -1  
 $EndComp
-Connection ~ 5700 1500
-Wire Wire Line
-	5700 1500 6000 1500
 $Comp
 L Connector:TestPoint TP1
 U 1 1 60658979
@@ -1470,25 +1443,6 @@ F 3 "~" H 1100 1260 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 1350 1400
-$Comp
-L Switch:SW_SPDT SW6
-U 1 1 608BB29F
-P 2550 1900
-F 0 "SW6" H 2550 2185 50  0000 C CNN
-F 1 "Soft Power" H 2550 1700 50  0000 C CNN
-F 2 "Button_Switch_THT:SW_Slide_1P2T_CK_OS102011MS2Q" H 2550 1900 50  0001 C CNN
-F 3 "~" H 2550 1900 50  0001 C CNN
-	1    2550 1900
-	0    -1   1    0   
-$EndComp
-Wire Wire Line
-	2450 1500 2450 1700
-Wire Wire Line
-	2450 1700 2550 1700
-Wire Wire Line
-	2650 2100 3200 2100
-Wire Wire Line
-	2450 2100 2450 2200
 Connection ~ 2450 2200
 Wire Wire Line
 	2450 2200 3000 2200
@@ -1592,12 +1546,12 @@ Wire Wire Line
 $Comp
 L Mechanical:MountingHole H7
 U 1 1 6127328F
-P 850 1750
-F 0 "H7" H 950 1796 50  0000 L CNN
-F 1 "Placeholder Graphic" H 950 1705 50  0000 L CNN
-F 2 "Symbol:Symbol_Barrel_Polarity" H 850 1750 50  0001 C CNN
-F 3 "~" H 850 1750 50  0001 C CNN
-	1    850  1750
+P 10100 2250
+F 0 "H7" H 10200 2296 50  0000 L CNN
+F 1 "Placeholder Graphic" H 10200 2205 50  0000 L CNN
+F 2 "Symbol:Symbol_Barrel_Polarity" H 10100 2250 50  0001 C CNN
+F 3 "~" H 10100 2250 50  0001 C CNN
+	1    10100 2250
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1611,4 +1565,36 @@ F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 3350 625
 	3    3350 6250
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	2450 1500 2450 2200
+Wire Wire Line
+	5500 1500 6000 1500
+Wire Wire Line
+	5050 1150 5050 1500
+Wire Wire Line
+	5050 1500 4500 1500
+Wire Wire Line
+	5050 1500 5200 1500
+Wire Wire Line
+	5050 1850 4900 1850
+Connection ~ 5050 1850
+Wire Wire Line
+	5050 1800 5050 1850
+$Comp
+L Device:R R7
+U 1 1 6027A198
+P 5050 1650
+F 0 "R7" H 5120 1696 50  0000 L CNN
+F 1 "11k" H 5120 1605 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 4980 1650 50  0001 C CNN
+F 3 "~" H 5050 1650 50  0001 C CNN
+	1    5050 1650
+	1    0    0    -1  
+$EndComp
+$Sheet
+S 11950 4900 2200 500 
+U 6104856E
+F0 "RTC & Compact Flash" 50
+F1 "RTC_CompactFlash.sch" 50
+$EndSheet
 $EndSCHEMATC

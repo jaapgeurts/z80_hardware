@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 5
+Sheet 4 6
 Title "Z80 Computer / Sound & I/O"
 Date "2021-02-02"
 Rev "2"
@@ -140,8 +140,6 @@ Text GLabel 1850 2800 0    50   Input ~ 0
 BDIR
 NoConn ~ 1850 2200
 NoConn ~ 1850 2300
-Text GLabel 5550 3000 2    50   Output ~ 0
-~PWR
 $Comp
 L Device:R R11
 U 1 1 60383CFB
@@ -232,192 +230,6 @@ Text GLabel 1400 2100 0    50   Input ~ 0
 CLK-4
 Wire Wire Line
 	1400 2100 1850 2100
-$Comp
-L personal:RTC72421 U19
-U 1 1 6044C351
-P 3000 6500
-F 0 "U19" H 3450 7100 50  0000 C CNN
-F 1 "RTC72421" H 3250 7200 50  0000 C CNN
-F 2 "Package_DIP:DIP-18_W7.62mm_Socket_LongPads" H 3000 6650 50  0001 C CNN
-F 3 "" H 3000 6650 50  0001 C CNN
-	1    3000 6500
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0106
-U 1 1 6044DD66
-P 3000 7250
-F 0 "#PWR0106" H 3000 7000 50  0001 C CNN
-F 1 "GND" H 3005 7077 50  0000 C CNN
-F 2 "" H 3000 7250 50  0001 C CNN
-F 3 "" H 3000 7250 50  0001 C CNN
-	1    3000 7250
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+5V #PWR0107
-U 1 1 6044E299
-P 2450 5300
-F 0 "#PWR0107" H 2450 5150 50  0001 C CNN
-F 1 "+5V" H 2465 5473 50  0000 C CNN
-F 2 "" H 2450 5300 50  0001 C CNN
-F 3 "" H 2450 5300 50  0001 C CNN
-	1    2450 5300
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2850 5300 3000 5300
-Wire Wire Line
-	2850 5550 3000 5550
-Connection ~ 3000 5550
-Wire Wire Line
-	3000 5550 3000 5800
-$Comp
-L Device:Battery_Cell BT1
-U 1 1 604603F2
-P 2150 5550
-F 0 "BT1" V 1895 5600 50  0000 C CNN
-F 1 "CR2032" V 1986 5600 50  0000 C CNN
-F 2 "Battery:BatteryHolder_Keystone_106_1x20mm" V 2150 5610 50  0001 C CNN
-F 3 "~" V 2150 5610 50  0001 C CNN
-	1    2150 5550
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	2350 5550 2550 5550
-$Comp
-L power:GND #PWR0108
-U 1 1 60463164
-P 1900 5550
-F 0 "#PWR0108" H 1900 5300 50  0001 C CNN
-F 1 "GND" H 1905 5377 50  0000 C CNN
-F 2 "" H 1900 5550 50  0001 C CNN
-F 3 "" H 1900 5550 50  0001 C CNN
-	1    1900 5550
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1900 5550 2050 5550
-Wire Wire Line
-	3450 6900 4000 6900
-Wire Wire Line
-	2550 5300 2450 5300
-$Comp
-L power:+5V #PWR0109
-U 1 1 6046A097
-P 4000 6600
-F 0 "#PWR0109" H 4000 6450 50  0001 C CNN
-F 1 "+5V" H 4015 6773 50  0000 C CNN
-F 2 "" H 4000 6600 50  0001 C CNN
-F 3 "" H 4000 6600 50  0001 C CNN
-	1    4000 6600
-	1    0    0    -1  
-$EndComp
-Text GLabel 3900 5900 2    50   Input ~ 0
-D[0..7]
-Wire Bus Line
-	3900 5900 3700 5900
-Wire Wire Line
-	3600 6200 3450 6200
-Entry Wire Line
-	3600 6200 3700 6100
-Entry Wire Line
-	3600 6300 3700 6200
-Entry Wire Line
-	3600 6400 3700 6300
-Entry Wire Line
-	3600 6500 3700 6400
-Wire Wire Line
-	3450 6300 3600 6300
-Wire Wire Line
-	3450 6400 3600 6400
-Wire Wire Line
-	3450 6500 3600 6500
-Text Label 3500 6200 0    50   ~ 0
-D0
-Text Label 3500 6300 0    50   ~ 0
-D1
-Text Label 3500 6400 0    50   ~ 0
-D2
-Text Label 3500 6500 0    50   ~ 0
-D3
-Text GLabel 2000 6000 0    50   Input ~ 0
-A[0..3]
-Wire Bus Line
-	2000 6000 2250 6000
-Entry Wire Line
-	2250 6100 2350 6200
-Entry Wire Line
-	2250 6200 2350 6300
-Entry Wire Line
-	2250 6300 2350 6400
-Entry Wire Line
-	2250 6400 2350 6500
-Wire Wire Line
-	2350 6200 2500 6200
-Wire Wire Line
-	2350 6300 2500 6300
-Wire Wire Line
-	2350 6400 2500 6400
-Wire Wire Line
-	2350 6500 2500 6500
-Text Label 2400 6200 0    50   ~ 0
-A0
-Text Label 2400 6300 0    50   ~ 0
-A1
-Text Label 2400 6400 0    50   ~ 0
-A2
-Text Label 2400 6500 0    50   ~ 0
-A3
-Text GLabel 3700 6800 2    50   Input ~ 0
-~RTCS
-Wire Wire Line
-	3700 6800 3450 6800
-Wire Wire Line
-	4000 6600 4000 6700
-Wire Wire Line
-	3450 6700 4000 6700
-Connection ~ 4000 6700
-Wire Wire Line
-	4000 6700 4000 6900
-Text GLabel 2400 6700 0    50   Input ~ 0
-~RD
-Text GLabel 2200 6800 0    50   Input ~ 0
-~WR
-Wire Wire Line
-	2200 6800 2500 6800
-Wire Wire Line
-	2400 6700 2500 6700
-Wire Wire Line
-	2500 7000 1700 7000
-Wire Wire Line
-	1700 7000 1700 6850
-$Comp
-L Device:R R18
-U 1 1 604CF319
-P 1700 6700
-F 0 "R18" H 1770 6746 50  0000 L CNN
-F 1 "10k" H 1770 6655 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 1630 6700 50  0001 C CNN
-F 3 "~" H 1700 6700 50  0001 C CNN
-	1    1700 6700
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+5V #PWR0110
-U 1 1 604CF638
-P 1700 6550
-F 0 "#PWR0110" H 1700 6400 50  0001 C CNN
-F 1 "+5V" H 1715 6723 50  0000 C CNN
-F 2 "" H 1700 6550 50  0001 C CNN
-F 3 "" H 1700 6550 50  0001 C CNN
-	1    1700 6550
-	1    0    0    -1  
-$EndComp
-Wire Notes Line
-	4800 7550 4800 4900
-Text Notes 850  5050 0    50   ~ 0
-Real Time Clock
 Wire Wire Line
 	3300 1500 3300 1250
 Connection ~ 3300 1500
@@ -425,12 +237,6 @@ Text Notes 5400 800  0    50   ~ 0
 Audio Amplifier
 Text Notes 850  800  0    50   ~ 0
 Sound Generator and GPIO
-Wire Notes Line
-	750  4900 750  7550
-Wire Notes Line
-	750  4900 4800 4900
-Wire Notes Line
-	750  7550 4800 7550
 Connection ~ 7500 2050
 Wire Wire Line
 	7800 1250 8500 1250
@@ -737,9 +543,9 @@ Wire Wire Line
 Wire Wire Line
 	8750 3200 8750 3100
 Wire Wire Line
-	8750 3200 9600 3200
+	8750 3200 9650 3200
 Wire Wire Line
-	9600 3200 9650 3300
+	9650 3200 9650 3300
 Connection ~ 8750 3200
 $Comp
 L power:+3V3 #PWR0123
@@ -816,21 +622,6 @@ F 3 "" H 2450 2550 50  0001 C CNN
 	1    2450 2550
 	1    0    0    -1  
 $EndComp
-$Comp
-L 74xx:74HCT04 U?
-U 4 1 60637D1F
-P 5200 3000
-AR Path="/60637D1F" Ref="U?"  Part="4" 
-AR Path="/601FFB8A/60637D1F" Ref="U1"  Part="4" 
-F 0 "U1" H 5200 2700 50  0000 C CNN
-F 1 "74HCT04" H 5200 2800 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 5200 3000 50  0001 C CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 5200 3000 50  0001 C CNN
-	4    5200 3000
-	1    0    0    1   
-$EndComp
-Wire Wire Line
-	5500 3000 5550 3000
 $Comp
 L Transistor_Array:ULN2803A U20
 U 1 1 60754930
@@ -938,16 +729,8 @@ F 3 "" H 4550 1700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4300 3100 4200 3100
-Wire Wire Line
-	4550 2550 4550 3200
-Wire Wire Line
-	4800 2550 4800 3300
-Wire Wire Line
 	3300 1250 5700 1250
 Connection ~ 5700 1250
-Wire Wire Line
-	4200 3000 4900 3000
 Wire Notes Line
 	750  650  5250 650 
 Wire Notes Line
@@ -1016,12 +799,6 @@ $EndComp
 Wire Wire Line
 	3850 2300 3850 2200
 Connection ~ 3850 2200
-Wire Wire Line
-	4300 2550 4300 3100
-Wire Wire Line
-	4200 3200 4550 3200
-Wire Wire Line
-	4200 3300 4800 3300
 $Comp
 L Connector:Conn_01x12_Female J8
 U 1 1 609AD5CC
@@ -1221,28 +998,6 @@ Text Label 4700 3950 0    50   ~ 0
 PC7
 Text Notes 7700 7100 0    39   ~ 0
 Copyright © Jaap Geurts 2021\n\nThis documentation describes Open Hardware and is licensed under the CERN OHL v. 1.1.\nYou may redistribute and modify this documentation under the terms of the CERN OHL v.1.1.\n(http://ohwr.org/cernohl). This documentation is distributed WITHOUT ANY EXPRESS OR IMPLIED\nWARRANTY, INCLUDING OF MERCHANTABILITY, SATISFACTORY QUALITY AND FITNESS FOR A PARTICULAR PURPOSE. \n\nPlease see the CERN OHL v.1.1 for applicable conditions\n
-$Comp
-L Diode:BAT42 D5
-U 1 1 60F29AE5
-P 2700 5550
-F 0 "D5" H 2700 5333 50  0000 C CNN
-F 1 "1n60" H 2700 5424 50  0000 C CNN
-F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 2700 5375 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/85660/bat42.pdf" H 2700 5550 50  0001 C CNN
-	1    2700 5550
-	-1   0    0    1   
-$EndComp
-$Comp
-L Diode:BAT42 D4
-U 1 1 60F2A661
-P 2700 5300
-F 0 "D4" H 2700 5083 50  0000 C CNN
-F 1 "1n60" H 2700 5174 50  0000 C CNN
-F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 2700 5125 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/85660/bat42.pdf" H 2700 5300 50  0001 C CNN
-	1    2700 5300
-	-1   0    0    1   
-$EndComp
 Wire Notes Line
 	5250 650  5250 4800
 Wire Notes Line
@@ -1250,20 +1005,6 @@ Wire Notes Line
 Wire Notes Line
 	6150 2800 11100 2800
 NoConn ~ 4200 2900
-NoConn ~ 2750 5800
-NoConn ~ 2850 5800
-$Comp
-L power:PWR_FLAG #FLG0103
-U 1 1 611B8592
-P 3000 5300
-F 0 "#FLG0103" H 3000 5375 50  0001 C CNN
-F 1 "PWR_FLAG" H 3000 5473 50  0000 C CNN
-F 2 "" H 3000 5300 50  0001 C CNN
-F 3 "~" H 3000 5300 50  0001 C CNN
-	1    3000 5300
-	1    0    0    -1  
-$EndComp
-Connection ~ 3000 5300
 Wire Wire Line
 	6600 6150 6600 5850
 Wire Wire Line
@@ -1311,42 +1052,11 @@ Wire Wire Line
 Wire Wire Line
 	6850 2300 6850 2050
 NoConn ~ 6150 1850
-NoConn ~ 6150 1950
 NoConn ~ 6350 1450
 NoConn ~ 6150 2050
 Connection ~ 7500 1250
 Text Notes 7400 1100 0    50   ~ 0
 ceramic first\nelse electrolytic
-$Comp
-L Device:C C?
-U 1 1 609A93FD
-P 3400 5450
-AR Path="/609A93FD" Ref="C?"  Part="1" 
-AR Path="/601FFB8A/609A93FD" Ref="C34"  Part="1" 
-F 0 "C34" H 3515 5496 50  0000 L CNN
-F 1 "100n" H 3515 5405 50  0000 L CNN
-F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm" H 3438 5300 50  0001 C CNN
-F 3 "~" H 3400 5450 50  0001 C CNN
-	1    3400 5450
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3400 5300 3000 5300
-$Comp
-L power:GND #PWR014
-U 1 1 609C8B4D
-P 3750 5600
-F 0 "#PWR014" H 3750 5350 50  0001 C CNN
-F 1 "GND" H 3755 5427 50  0000 C CNN
-F 2 "" H 3750 5600 50  0001 C CNN
-F 3 "" H 3750 5600 50  0001 C CNN
-	1    3750 5600
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3750 5600 3400 5600
-Wire Wire Line
-	3000 5300 3000 5550
 Wire Wire Line
 	8600 3500 8850 3500
 Wire Wire Line
@@ -1467,10 +1177,73 @@ Wire Wire Line
 	10450 3800 10150 3800
 Wire Wire Line
 	10150 3900 10350 3900
-Wire Bus Line
-	2250 6000 2250 6400
-Wire Bus Line
-	3700 5900 3700 6400
+Wire Wire Line
+	6050 2150 6050 1950
+Wire Wire Line
+	6050 1950 6150 1950
+Connection ~ 6050 2150
+Wire Wire Line
+	4800 2550 4800 3200
+Wire Wire Line
+	4550 2550 4550 3100
+Wire Wire Line
+	4300 2550 4300 3000
+Wire Wire Line
+	4200 3200 4800 3200
+Wire Wire Line
+	4550 3100 4200 3100
+Wire Wire Line
+	4200 3000 4300 3000
+Wire Wire Line
+	4200 3300 5050 3300
+$Comp
+L Device:Buzzer BZ?
+U 1 1 60C7A00F
+P 5150 2850
+F 0 "BZ?" H 5302 2879 50  0000 L CNN
+F 1 "Buzzer" H 5302 2788 50  0000 L CNN
+F 2 "" V 5125 2950 50  0001 C CNN
+F 3 "~" V 5125 2950 50  0001 C CNN
+	1    5150 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 60C7B1DD
+P 5050 3150
+F 0 "R?" H 5120 3196 50  0000 L CNN
+F 1 "100" H 5120 3105 50  0000 L CNN
+F 2 "" V 4980 3150 50  0001 C CNN
+F 3 "~" H 5050 3150 50  0001 C CNN
+	1    5050 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5050 1700 4800 1700
+Connection ~ 4800 1700
+Wire Wire Line
+	5050 2750 5050 2700
+Wire Wire Line
+	5050 2950 5050 3000
+$Comp
+L Diode:1N4148 D?
+U 1 1 60C9FC40
+P 4900 2850
+F 0 "D?" V 4854 2930 50  0000 L CNN
+F 1 "1N4148" V 4945 2930 50  0000 L CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 4900 2675 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 4900 2850 50  0001 C CNN
+	1    4900 2850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4900 2700 5050 2700
+Connection ~ 5050 2700
+Wire Wire Line
+	5050 2700 5050 1700
+Wire Wire Line
+	4900 3000 5050 3000
+Connection ~ 5050 3000
 Wire Bus Line
 	3250 2400 3250 4550
 Wire Bus Line

@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 5
+Sheet 3 6
 Title "Z80 Computer / Input & Output"
 Date "2021-02-02"
 Rev "2"
@@ -236,12 +236,12 @@ Wire Wire Line
 $Comp
 L power:GND #PWR030
 U 1 1 60306B31
-P 7650 2150
-F 0 "#PWR030" H 7650 1900 50  0001 C CNN
-F 1 "GND" H 7655 1977 50  0000 C CNN
-F 2 "" H 7650 2150 50  0001 C CNN
-F 3 "" H 7650 2150 50  0001 C CNN
-	1    7650 2150
+P 7800 2150
+F 0 "#PWR030" H 7800 1900 50  0001 C CNN
+F 1 "GND" H 7805 1977 50  0000 C CNN
+F 2 "" H 7800 2150 50  0001 C CNN
+F 3 "" H 7800 2150 50  0001 C CNN
+	1    7800 2150
 	1    0    0    -1  
 $EndComp
 NoConn ~ 6250 2200
@@ -520,7 +520,7 @@ A[0..1]
 Wire Bus Line
 	4450 4250 4800 4250
 $Comp
-L dk_Transistors-Bipolar-BJT-Single:2N3904 Q1
+L dk_Transistors-Bipolar-BJT-Single:2N3904-AP Q1
 U 1 1 604A1EF9
 P 8350 3900
 F 0 "Q1" H 8538 3953 60  0000 L CNN
@@ -665,7 +665,7 @@ Connection ~ 9050 2800
 Wire Wire Line
 	9050 3100 9050 2800
 $Comp
-L dk_Transistors-Bipolar-BJT-Single:2N3904 Q2
+L dk_Transistors-Bipolar-BJT-Single:2N3904-AP Q2
 U 1 1 606176A0
 P 8950 3300
 F 0 "Q2" H 9138 3353 60  0000 L CNN
@@ -752,55 +752,47 @@ Wire Wire Line
 Wire Wire Line
 	1500 3150 2100 3150
 Wire Wire Line
-	6250 1700 7250 1700
+	6250 1700 7100 1700
 Wire Wire Line
-	7250 1700 7250 1350
+	8050 1950 7800 1950
 Wire Wire Line
-	7250 1350 7700 1350
+	7800 1950 7800 2150
 Wire Wire Line
-	7300 1450 7700 1450
+	8050 1550 7500 1550
 Wire Wire Line
-	7300 1450 7300 1900
+	7500 1550 7500 2100
 Wire Wire Line
-	7700 1950 7650 1950
-Wire Wire Line
-	7650 1950 7650 2150
-Wire Wire Line
-	7700 1550 7350 1550
-Wire Wire Line
-	7350 1550 7350 2100
-Wire Wire Line
-	7400 1650 7700 1650
+	7550 1650 8050 1650
 Wire Wire Line
 	6250 2350 6500 2350
 Wire Wire Line
 	6500 2350 6500 2100
 Wire Wire Line
-	6500 2100 7350 2100
+	6500 2100 7500 2100
 Wire Wire Line
 	6250 2450 6550 2450
 Wire Wire Line
 	6550 2450 6550 2150
 Wire Wire Line
-	6550 2150 7400 2150
+	6550 2150 7550 2150
 Wire Wire Line
-	7400 2150 7400 1650
+	7550 2150 7550 1650
 Wire Wire Line
 	6250 2550 6600 2550
 Wire Wire Line
 	6600 2550 6600 2200
 Wire Wire Line
-	6600 2200 7450 2200
+	6600 2200 7600 2200
 Wire Wire Line
-	7450 2200 7450 1750
+	7600 2200 7600 1750
 Wire Wire Line
-	7450 1750 7700 1750
+	7600 1750 8050 1750
 Wire Wire Line
-	7700 1850 7500 1850
+	8050 1850 7650 1850
 Wire Wire Line
-	7500 1850 7500 2250
+	7650 1850 7650 2250
 Wire Wire Line
-	7500 2250 6650 2250
+	7650 2250 6650 2250
 Wire Wire Line
 	6650 2250 6650 2650
 Wire Wire Line
@@ -1019,17 +1011,6 @@ Wire Notes Line
 	750  4550 4950 4550
 Wire Notes Line
 	750  7700 4950 7700
-$Comp
-L Connector_Generic:Conn_02x22_Odd_Even J7
-U 1 1 60587553
-P 8000 5400
-F 0 "J7" V 8004 6479 50  0000 L CNN
-F 1 "CompactFlash Port" V 8095 6479 50  0000 L CNN
-F 2 "Personal:CompactFlash_Module" H 8000 5400 50  0001 C CNN
-F 3 "~" H 8000 5400 50  0001 C CNN
-	1    8000 5400
-	0    -1   1    0   
-$EndComp
 Text Label 3700 5250 0    50   ~ 0
 PA0
 Text Label 3700 5350 0    50   ~ 0
@@ -1083,230 +1064,11 @@ F 3 "" H 9400 2250 50  0001 C CNN
 	1    9400 2250
 	1    0    0    -1  
 $EndComp
-Text GLabel 9150 4800 0    50   Input ~ 0
-A[0..2]
-Text GLabel 6700 4950 0    50   Input ~ 0
-D[0..7]
-Entry Wire Line
-	7700 4950 7800 5050
-Entry Wire Line
-	7000 4950 7100 5050
-Entry Wire Line
-	7100 4950 7200 5050
-Entry Wire Line
-	7200 4950 7300 5050
-Entry Wire Line
-	7300 4950 7400 5050
-Entry Wire Line
-	7400 4950 7500 5050
-Entry Wire Line
-	7500 4950 7600 5050
-Entry Wire Line
-	7600 4950 7700 5050
-Wire Wire Line
-	7100 5050 7100 5200
-Wire Wire Line
-	7200 5050 7200 5200
-Wire Wire Line
-	7300 5200 7300 5050
-Wire Wire Line
-	7400 5200 7400 5050
-Wire Wire Line
-	7500 5200 7500 5050
-Wire Wire Line
-	7600 5050 7600 5200
-Wire Wire Line
-	7700 5050 7700 5200
-Wire Wire Line
-	7800 5050 7800 5200
-Text Label 7800 5150 1    47   ~ 0
-D0
-Text Label 7700 5150 1    47   ~ 0
-D1
-Text Label 7600 5150 1    47   ~ 0
-D2
-Text Label 7500 5150 1    47   ~ 0
-D3
-Text Label 7400 5150 1    47   ~ 0
-D4
-Text Label 7300 5150 1    47   ~ 0
-D5
-Text Label 7200 5150 1    47   ~ 0
-D6
-Text Label 7100 5150 1    47   ~ 0
-D7
-Wire Wire Line
-	7900 5200 7900 4600
-Wire Wire Line
-	7900 4600 8050 4600
-Wire Wire Line
-	8050 4600 8050 4650
-$Comp
-L power:GND #PWR0132
-U 1 1 613242FB
-P 8050 4650
-F 0 "#PWR0132" H 8050 4400 50  0001 C CNN
-F 1 "GND" H 8055 4477 50  0000 C CNN
-F 2 "" H 8050 4650 50  0001 C CNN
-F 3 "" H 8050 4650 50  0001 C CNN
-	1    8050 4650
-	1    0    0    -1  
-$EndComp
-NoConn ~ 8000 5200
-NoConn ~ 8300 5200
-NoConn ~ 8400 5200
-NoConn ~ 8500 5200
-NoConn ~ 7100 5700
-NoConn ~ 7200 5700
-NoConn ~ 7300 5700
-NoConn ~ 7400 5700
-NoConn ~ 7500 5700
-NoConn ~ 7600 5700
-NoConn ~ 7700 5700
-NoConn ~ 7800 5700
-NoConn ~ 8300 5700
-NoConn ~ 8500 5700
-NoConn ~ 8600 5700
-Wire Wire Line
-	8900 5700 8900 6000
-Wire Wire Line
-	8900 6000 8400 6000
-Wire Wire Line
-	8400 6000 8400 5700
-Wire Wire Line
-	8400 6000 8200 6000
-Wire Wire Line
-	8200 6000 8200 5700
-Connection ~ 8400 6000
-Wire Wire Line
-	8200 6000 8100 6000
-Wire Wire Line
-	8100 6000 8100 5700
-Connection ~ 8200 6000
-Wire Wire Line
-	8100 6000 8000 6000
-Wire Wire Line
-	8000 6000 8000 5700
-Connection ~ 8100 6000
-Wire Wire Line
-	8000 6000 7000 6000
-Wire Wire Line
-	7000 6000 7000 5700
-Connection ~ 8000 6000
-NoConn ~ 7900 5700
-Entry Wire Line
-	9200 4800 9300 4900
-Entry Wire Line
-	9300 4800 9400 4900
-Entry Wire Line
-	9400 4800 9500 4900
-Wire Wire Line
-	9300 4900 9300 4950
-Wire Wire Line
-	9300 4950 8700 4950
-Wire Wire Line
-	8700 4950 8700 5200
-Wire Wire Line
-	9400 4900 9400 5000
-Wire Wire Line
-	9400 5000 8600 5000
-Wire Wire Line
-	8600 5000 8600 5200
-Wire Wire Line
-	9500 4900 9500 6150
-Wire Wire Line
-	9500 6150 8700 6150
-Wire Wire Line
-	8700 6150 8700 5700
-Text Label 8600 5150 1    47   ~ 0
-A1
-Text Label 8700 5150 1    47   ~ 0
-A0
-Text Label 8700 5900 1    47   ~ 0
-A2
-Wire Wire Line
-	9000 5200 9000 5050
-Wire Wire Line
-	9000 5700 9000 5950
-Wire Wire Line
-	8800 5700 8800 5900
-Wire Wire Line
-	9100 5200 9250 5200
-Wire Wire Line
-	9250 6000 8900 6000
-Connection ~ 8900 6000
-Wire Wire Line
-	9250 5200 9250 6000
-Wire Wire Line
-	10100 5050 10400 5050
-Connection ~ 10100 5050
-Wire Wire Line
-	10100 5100 10100 5050
-$Comp
-L Device:R R29
-U 1 1 614F11C4
-P 10100 5250
-F 0 "R29" H 10170 5296 50  0000 L CNN
-F 1 "1k" H 10170 5205 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 10030 5250 50  0001 C CNN
-F 3 "~" H 10100 5250 50  0001 C CNN
-	1    10100 5250
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	10100 5900 10100 5400
-Connection ~ 10400 5050
-Wire Wire Line
-	10400 5950 10400 5050
-Wire Wire Line
-	10400 5050 10400 4950
-$Comp
-L power:+5V #PWR0133
-U 1 1 614BDFA1
-P 10400 4950
-F 0 "#PWR0133" H 10400 4800 50  0001 C CNN
-F 1 "+5V" H 10415 5123 50  0000 C CNN
-F 2 "" H 10400 4950 50  0001 C CNN
-F 3 "" H 10400 4950 50  0001 C CNN
-	1    10400 4950
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8800 5900 10100 5900
-Wire Wire Line
-	9000 5950 10400 5950
-Text GLabel 8400 4750 0    47   Input ~ 0
-~CFS
-Text GLabel 8250 5050 2    50   Input ~ 0
-~RD
-Wire Wire Line
-	8800 4750 8400 4750
-Wire Wire Line
-	8800 4750 8800 5200
-Wire Wire Line
-	8250 5050 8200 5050
-Wire Wire Line
-	8200 5050 8200 5200
-Text GLabel 8250 4900 2    50   Input ~ 0
-~WR
-Wire Wire Line
-	8250 4900 8100 4900
-Wire Wire Line
-	8100 4900 8100 5200
-Text GLabel 6550 5150 0    50   Input ~ 0
-~RESET
-Wire Wire Line
-	6550 5150 7000 5150
-Wire Wire Line
-	7000 5150 7000 5200
-NoConn ~ 9100 5700
 Wire Wire Line
 	5700 1450 5700 1500
 Wire Wire Line
 	2600 1350 2600 1450
 NoConn ~ 2100 3250
-Wire Wire Line
-	9000 5050 9750 5050
 Text GLabel 3400 1800 2    50   Input ~ 0
 CLK-2
 Text Notes 3250 1700 0    50   ~ 0
@@ -1324,75 +1086,29 @@ F 3 "~" H 6100 4000 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	6250 4000 6350 4000
-$Comp
-L Device:R R28
-U 1 1 605A9E18
-P 9750 5300
-F 0 "R28" H 9820 5346 50  0000 L CNN
-F 1 "330" H 9820 5255 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 9680 5300 50  0001 C CNN
-F 3 "~" H 9750 5300 50  0001 C CNN
-	1    9750 5300
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:LED D9
-U 1 1 605AA9B3
-P 9750 5600
-F 0 "D9" V 9789 5482 50  0000 R CNN
-F 1 "CF Activity" V 9698 5482 50  0000 R CNN
-F 2 "LED_THT:LED_D5.0mm" H 9750 5600 50  0001 C CNN
-F 3 "~" H 9750 5600 50  0001 C CNN
-	1    9750 5600
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	9750 5750 9600 5750
-Wire Wire Line
-	9600 5750 9600 5100
-Wire Wire Line
-	9600 5100 8900 5100
-Wire Wire Line
-	8900 5100 8900 5200
-Wire Wire Line
-	9750 5150 9750 5050
-Connection ~ 9750 5050
-Wire Wire Line
-	9750 5050 10100 5050
-$Comp
-L power:GND #PWR0135
-U 1 1 60E1E285
-P 8000 6000
-F 0 "#PWR0135" H 8000 5750 50  0001 C CNN
-F 1 "GND" H 8005 5827 50  0000 C CNN
-F 2 "" H 8000 6000 50  0001 C CNN
-F 3 "" H 8000 6000 50  0001 C CNN
-	1    8000 6000
-	1    0    0    -1  
-$EndComp
-Text Label 7550 1350 0    50   ~ 0
+Text Label 7750 1350 0    50   ~ 0
 RXD
 Text Label 6450 1800 0    50   ~ 0
 RxTxCA
-Text Label 7550 1450 0    50   ~ 0
+Text Label 7750 1450 0    50   ~ 0
 TXD
-Text Label 7550 1550 0    50   ~ 0
+Text Label 7750 1550 0    50   ~ 0
 ~RTS
-Text Label 7550 1650 0    50   ~ 0
+Text Label 7750 1650 0    50   ~ 0
 ~CTS
-Text Label 7550 1750 0    50   ~ 0
+Text Label 7750 1750 0    50   ~ 0
 ~DTR
-Text Label 7550 1850 0    50   ~ 0
+Text Label 7750 1850 0    50   ~ 0
 ~DCD
 $Comp
 L Connector:Conn_01x07_Male J6
 U 1 1 60B7F4D8
-P 7900 1650
-F 0 "J6" H 7872 1674 50  0000 R CNN
-F 1 "RS232" H 7950 2050 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x07_P2.54mm_Vertical" H 7900 1650 50  0001 C CNN
-F 3 "~" H 7900 1650 50  0001 C CNN
-	1    7900 1650
+P 8250 1650
+F 0 "J6" H 8222 1674 50  0000 R CNN
+F 1 "RS232" H 8300 2050 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x07_P2.54mm_Vertical" H 8250 1650 50  0001 C CNN
+F 3 "~" H 8250 1650 50  0001 C CNN
+	1    8250 1650
 	-1   0    0    -1  
 $EndComp
 $Comp
@@ -1447,22 +1163,6 @@ F 3 "~" H 6500 1450 50  0001 C CNN
 	1    6500 1450
 	1    0    0    -1  
 $EndComp
-Wire Bus Line
-	9150 4800 9400 4800
-Wire Bus Line
-	6700 4950 7700 4950
-Wire Bus Line
-	2200 7050 2200 7250
-Wire Bus Line
-	2150 5000 2150 5850
-Wire Bus Line
-	1300 2700 1300 3250
-Wire Bus Line
-	4800 3600 4800 4250
-Wire Bus Line
-	4850 1050 4850 2300
-Wire Bus Line
-	1800 1050 1800 2250
 $Comp
 L 74xx:74LS04 U18
 U 6 1 606774FF
@@ -1482,4 +1182,46 @@ Connection ~ 9400 2250
 Wire Wire Line
 	9400 2250 9850 2250
 NoConn ~ 10600 1950
+$Comp
+L Device:R R?
+U 1 1 60A95CDC
+P 7100 1500
+F 0 "R?" H 7170 1546 50  0000 L CNN
+F 1 "2k7" H 7170 1455 50  0000 L CNN
+F 2 "" V 7030 1500 50  0001 C CNN
+F 3 "~" H 7100 1500 50  0001 C CNN
+	1    7100 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7100 1700 7100 1650
+Wire Wire Line
+	7100 1350 8050 1350
+$Comp
+L Device:R R?
+U 1 1 60AE8D9E
+P 7300 1600
+F 0 "R?" H 7370 1646 50  0000 L CNN
+F 1 "2k7" H 7370 1555 50  0000 L CNN
+F 2 "" V 7230 1600 50  0001 C CNN
+F 3 "~" H 7300 1600 50  0001 C CNN
+	1    7300 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7300 1750 7300 1900
+Wire Wire Line
+	7300 1450 8050 1450
+Wire Bus Line
+	2200 7050 2200 7250
+Wire Bus Line
+	1300 2700 1300 3250
+Wire Bus Line
+	4800 3600 4800 4250
+Wire Bus Line
+	2150 5000 2150 5850
+Wire Bus Line
+	4850 1050 4850 2300
+Wire Bus Line
+	1800 1050 1800 2250
 $EndSCHEMATC

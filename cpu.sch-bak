@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 5 5
+Sheet 5 6
 Title "Z80 CPU & Memory Logic"
 Date "2021-02-02"
 Rev "2"
@@ -524,7 +524,7 @@ Wire Wire Line
 	1600 1950 1600 1850
 Wire Wire Line
 	1900 2500 1550 2500
-Text GLabel 1550 2500 0    50   Input ~ 0
+Text GLabel 1350 2350 0    50   Input ~ 0
 ~INT
 Wire Wire Line
 	1600 2250 1600 2350
@@ -545,7 +545,7 @@ F 3 "~" H 1600 2100 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1350 2350 1600 2350
-Text GLabel 1350 2350 0    50   Input ~ 0
+Text GLabel 1550 2500 0    50   Input ~ 0
 ~NMI
 Text GLabel 1350 3150 0    50   Input ~ 0
 ~WAIT

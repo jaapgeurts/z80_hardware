@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 5
+Sheet 2 6
 Title "Z80 Computer / ROM & RAM"
 Date "2021-02-02"
 Rev "2"
@@ -1036,6 +1036,17 @@ F 3 "~" H 2250 6400 50  0001 C CNN
 	1    2250 6400
 	1    0    0    -1  
 $EndComp
+$Comp
+L Mechanical:MountingHole H8
+U 1 1 60AAEE1C
+P 2250 6950
+F 0 "H8" H 2350 6996 50  0000 L CNN
+F 1 "Placeholder creative Comomns" H 2350 6905 50  0000 L CNN
+F 2 "" H 2250 6950 50  0001 C CNN
+F 3 "~" H 2250 6950 50  0001 C CNN
+	1    2250 6950
+	1    0    0    -1  
+$EndComp
 Wire Bus Line
 	4700 1050 4700 2400
 Wire Bus Line
@@ -1056,15 +1067,4 @@ Wire Bus Line
 	1750 1200 1750 2900
 Wire Bus Line
 	8600 1200 8600 3100
-$Comp
-L Mechanical:MountingHole H8
-U 1 1 60AAEE1C
-P 2250 6950
-F 0 "H8" H 2350 6996 50  0000 L CNN
-F 1 "Placeholder creative Comomns" H 2350 6905 50  0000 L CNN
-F 2 "" H 2250 6950 50  0001 C CNN
-F 3 "~" H 2250 6950 50  0001 C CNN
-	1    2250 6950
-	1    0    0    -1  
-$EndComp
 $EndSCHEMATC

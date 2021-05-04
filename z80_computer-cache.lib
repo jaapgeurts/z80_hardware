@@ -46,7 +46,6 @@ F0 "U" 0 50 50 H V C CNN
 F1 "74xx_74HCT04" 0 -50 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
-ALIAS 74HC04 74HCT04 74AHC04 74AHCT04
 $FPLIST
  DIP*W7.62mm*
  SSOP?14*
@@ -84,6 +83,7 @@ F0 "U" 0 50 50 H V C CNN
 F1 "74xx_74LS04" 0 -50 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
+ALIAS 74HC04 74HCT04 74AHC04 74AHCT04
 $FPLIST
  DIP*W7.62mm*
  SSOP?14*
@@ -597,6 +597,26 @@ X - 2 0 -100 100 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
+# Device_Buzzer
+#
+DEF Device_Buzzer BZ 0 1 Y N 1 F N
+F0 "BZ" 150 50 50 H V L CNN
+F1 "Device_Buzzer" 150 -50 50 H V L CNN
+F2 "" -25 100 50 V I C CNN
+F3 "" -25 100 50 V I C CNN
+$FPLIST
+ *Buzzer*
+$ENDFPLIST
+DRAW
+A 0 0 125 -899 899 0 1 0 N 0 -125 0 125
+P 2 0 1 0 -65 75 -45 75 N
+P 2 0 1 0 -55 85 -55 65 N
+P 2 0 1 0 0 125 0 -125 N
+X - 1 -100 100 100 R 50 50 1 1 P
+X + 2 -100 -100 100 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
 # Device_C
 #
 DEF Device_C C 0 10 N Y 1 F N
@@ -653,6 +673,28 @@ P 2 0 1 20 75 -50 75 50 N
 P 2 0 1 0 100 0 75 0 N
 X 1 1 -150 0 50 R 50 50 1 1 P
 X 2 2 150 0 50 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Device_D_Zener
+#
+DEF Device_D_Zener D 0 40 N N 1 F N
+F0 "D" 0 100 50 H V C CNN
+F1 "Device_D_Zener" 0 -100 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ TO-???*
+ *_Diode_*
+ *SingleDiode*
+ D_*
+$ENDFPLIST
+DRAW
+P 2 0 1 0 50 0 -50 0 N
+P 3 0 1 10 -50 -50 -50 50 -30 50 N
+P 4 0 1 10 50 -50 50 50 -50 0 50 -50 N
+X K 1 -150 0 100 R 50 50 1 1 P
+X A 2 150 0 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
@@ -738,6 +780,26 @@ DRAW
 S -40 -100 40 100 0 1 10 N
 X ~ 1 0 150 50 D 50 50 1 1 P
 X ~ 2 0 -150 50 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Diode_1N4148
+#
+DEF Diode_1N4148 D 0 40 N N 1 F N
+F0 "D" 0 100 50 H V C CNN
+F1 "Diode_1N4148" 0 -100 50 H V C CNN
+F2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" 0 -175 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+ALIAS 1N4448 1N4149 1N4151 1N914 BA243 BA244 BA282 BA283 BAV17 BAV18 BAV19 BAV20 BAV21 BAW75 BAW76 BAY93
+$FPLIST
+ D*DO?35*
+$ENDFPLIST
+DRAW
+P 2 0 1 10 -50 50 -50 -50 N
+P 2 0 1 0 50 0 -50 0 N
+P 4 0 1 10 50 50 50 -50 -50 0 50 50 N
+X K 1 -150 0 100 R 50 50 1 1 P
+X A 2 150 0 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
@@ -1163,21 +1225,21 @@ X A1 9 -450 -200 150 R 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
-# dk_Transistors-Bipolar-BJT-Single_2N3904
+# dk_Transistors-Bipolar-BJT-Single_2N3904-AP
 #
-DEF dk_Transistors-Bipolar-BJT-Single_2N3904 Q 0 0 Y Y 1 F N
+DEF dk_Transistors-Bipolar-BJT-Single_2N3904-AP Q 0 0 Y Y 1 F N
 F0 "Q" -126 166 60 H V L CNN
-F1 "dk_Transistors-Bipolar-BJT-Single_2N3904" 206 0 60 V V C CNN
-F2 "digikey-footprints:TO-92-3" 200 200 60 H I L CNN
-F3 "https://my.centralsemi.com/get_document.php?cmp=1&mergetype=pd&mergepath=pd&pdf_id=LSSGP072.PDF" 200 300 60 H I L CNN
-F4 "2N3904CS-ND" 200 400 60 H I L CNN "Digi-Key_PN"
-F5 "2N3904" 200 500 60 H I L CNN "MPN"
+F1 "dk_Transistors-Bipolar-BJT-Single_2N3904-AP" 206 0 60 V V C CNN
+F2 "digikey-footprints:TO-92-3_Formed_Leads" 200 200 60 H I L CNN
+F3 "https://www.mccsemi.com/pdf/Products/2N3904(TO-92).pdf" 200 300 60 H I L CNN
+F4 "2N3904-APCT-ND" 200 400 60 H I L CNN "Digi-Key_PN"
+F5 "2N3904-AP" 200 500 60 H I L CNN "MPN"
 F6 "Discrete Semiconductor Products" 200 600 60 H I L CNN "Category"
 F7 "Transistors - Bipolar (BJT) - Single" 200 700 60 H I L CNN "Family"
-F8 "https://my.centralsemi.com/get_document.php?cmp=1&mergetype=pd&mergepath=pd&pdf_id=LSSGP072.PDF" 200 800 60 H I L CNN "DK_Datasheet_Link"
-F9 "/product-detail/en/central-semiconductor-corp/2N3904/2N3904CS-ND/4806876" 200 900 60 H I L CNN "DK_Detail_Page"
-F10 "TRANS NPN 40V TO-92" 200 1000 60 H I L CNN "Description"
-F11 "Central Semiconductor Corp" 200 1100 60 H I L CNN "Manufacturer"
+F8 "https://www.mccsemi.com/pdf/Products/2N3904(TO-92).pdf" 200 800 60 H I L CNN "DK_Datasheet_Link"
+F9 "/product-detail/en/micro-commercial-co/2N3904-AP/2N3904-APCT-ND/950591" 200 900 60 H I L CNN "DK_Detail_Page"
+F10 "TRANS NPN 40V 0.2A TO92" 200 1000 60 H I L CNN "Description"
+F11 "Micro Commercial Co" 200 1100 60 H I L CNN "Manufacturer"
 F12 "Active" 200 1200 60 H I L CNN "Status"
 DRAW
 C 0 0 128 0 1 0 f
@@ -1188,8 +1250,38 @@ P 2 0 1 0 0 50 100 100 N
 P 2 0 1 0 0 100 0 -100 N
 P 4 0 1 0 60 -50 80 -90 40 -100 60 -50 F
 X E 1 100 -200 100 U 50 50 1 1 P
-X C 2 100 200 100 D 50 50 1 1 P
-X B 3 -200 0 100 R 50 50 1 1 I
+X B 2 -200 0 100 R 50 50 1 1 I
+X C 3 100 200 100 D 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# dk_Transistors-Bipolar-BJT-Single_2N3906
+#
+DEF dk_Transistors-Bipolar-BJT-Single_2N3906 Q 0 0 Y Y 1 F N
+F0 "Q" -94 154 60 H V C CNN
+F1 "dk_Transistors-Bipolar-BJT-Single_2N3906" 200 0 60 V V C CNN
+F2 "digikey-footprints:TO-92-3" 200 200 60 H I L CNN
+F3 "https://my.centralsemi.com/get_document.php?cmp=1&mergetype=pd&mergepath=pd&pdf_id=LSSGP072.PDF" 200 300 60 H I L CNN
+F4 "2N3906CS-ND" 200 400 60 H I L CNN "Digi-Key_PN"
+F5 "2N3906" 200 500 60 H I L CNN "MPN"
+F6 "Discrete Semiconductor Products" 200 600 60 H I L CNN "Category"
+F7 "Transistors - Bipolar (BJT) - Single" 200 700 60 H I L CNN "Family"
+F8 "https://my.centralsemi.com/get_document.php?cmp=1&mergetype=pd&mergepath=pd&pdf_id=LSSGP072.PDF" 200 800 60 H I L CNN "DK_Datasheet_Link"
+F9 "/product-detail/en/central-semiconductor-corp/2N3906/2N3906CS-ND/4806878" 200 900 60 H I L CNN "DK_Detail_Page"
+F10 "TRANS PNP 40V TO-92" 200 1000 60 H I L CNN "Description"
+F11 "Central Semiconductor Corp" 200 1100 60 H I L CNN "Manufacturer"
+F12 "Active" 200 1200 60 H I L CNN "Status"
+DRAW
+C 0 0 118 0 1 0 f
+P 2 0 1 0 -150 0 -100 0 N
+P 2 0 1 0 -140 0 0 0 N
+P 2 0 1 0 0 -50 100 -100 N
+P 2 0 1 0 0 50 100 100 N
+P 2 0 1 0 0 100 0 -100 N
+P 4 0 1 0 40 100 20 60 60 50 40 100 F
+X E 1 100 200 100 D 50 50 1 1 P
+X B 2 -200 0 100 R 50 50 1 1 I
+X C 3 100 -200 100 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
