@@ -4,9 +4,9 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 3 6
-Title "Z80 Computer / Input & Output"
-Date "2021-02-02"
-Rev "2"
+Title "Z80 Computer"
+Date "2021-05-04"
+Rev "3"
 Comp "Jaap Geurts"
 Comment1 ""
 Comment2 ""
@@ -1183,10 +1183,10 @@ Wire Wire Line
 	9400 2250 9850 2250
 NoConn ~ 10600 1950
 $Comp
-L Device:R R?
+L Device:R R18
 U 1 1 60A95CDC
 P 7100 1500
-F 0 "R?" H 7170 1546 50  0000 L CNN
+F 0 "R18" H 7170 1546 50  0000 L CNN
 F 1 "2k7" H 7170 1455 50  0000 L CNN
 F 2 "" V 7030 1500 50  0001 C CNN
 F 3 "~" H 7100 1500 50  0001 C CNN
@@ -1198,10 +1198,10 @@ Wire Wire Line
 Wire Wire Line
 	7100 1350 8050 1350
 $Comp
-L Device:R R?
+L Device:R R28
 U 1 1 60AE8D9E
 P 7300 1600
-F 0 "R?" H 7370 1646 50  0000 L CNN
+F 0 "R28" H 7370 1646 50  0000 L CNN
 F 1 "2k7" H 7370 1555 50  0000 L CNN
 F 2 "" V 7230 1600 50  0001 C CNN
 F 3 "~" H 7300 1600 50  0001 C CNN

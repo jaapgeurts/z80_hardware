@@ -4,9 +4,9 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 4 6
-Title "Z80 Computer / Sound & I/O"
-Date "2021-02-02"
-Rev "2"
+Title "Z80 Computer"
+Date "2021-05-04"
+Rev "3"
 Comp "Jaap Geurts"
 Comment1 ""
 Comment2 ""
@@ -1197,10 +1197,10 @@ Wire Wire Line
 Wire Wire Line
 	4200 3300 5050 3300
 $Comp
-L Device:Buzzer BZ?
+L Device:Buzzer BZ1
 U 1 1 60C7A00F
 P 5150 2850
-F 0 "BZ?" H 5302 2879 50  0000 L CNN
+F 0 "BZ1" H 5302 2879 50  0000 L CNN
 F 1 "Buzzer" H 5302 2788 50  0000 L CNN
 F 2 "" V 5125 2950 50  0001 C CNN
 F 3 "~" V 5125 2950 50  0001 C CNN
@@ -1208,10 +1208,10 @@ F 3 "~" V 5125 2950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R?
+L Device:R R29
 U 1 1 60C7B1DD
 P 5050 3150
-F 0 "R?" H 5120 3196 50  0000 L CNN
+F 0 "R29" H 5120 3196 50  0000 L CNN
 F 1 "100" H 5120 3105 50  0000 L CNN
 F 2 "" V 4980 3150 50  0001 C CNN
 F 3 "~" H 5050 3150 50  0001 C CNN
@@ -1226,10 +1226,10 @@ Wire Wire Line
 Wire Wire Line
 	5050 2950 5050 3000
 $Comp
-L Diode:1N4148 D?
+L Diode:1N4148 D4
 U 1 1 60C9FC40
 P 4900 2850
-F 0 "D?" V 4854 2930 50  0000 L CNN
+F 0 "D4" V 4854 2930 50  0000 L CNN
 F 1 "1N4148" V 4945 2930 50  0000 L CNN
 F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 4900 2675 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 4900 2850 50  0001 C CNN

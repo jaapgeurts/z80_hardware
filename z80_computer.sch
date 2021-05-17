@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 6
 Title "Z80 Computer"
-Date "2021-02-02"
-Rev "2"
+Date "2021-05-04"
+Rev "3"
 Comp "Jaap Geurts"
 Comment1 ""
 Comment2 ""
